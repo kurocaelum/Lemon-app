@@ -43,6 +43,25 @@
     .jl-menu {
         display: none;
     }
+
+    .jl-btn-contact {
+        width: 45px;
+        height: 45px;
+        display: block;
+        position: fixed;
+        background-color: #2CCB69;
+        background-image: url('../images/icon-contact-close.svg');
+        background-repeat: no-repeat;
+        bottom: 45px;
+        right: 45px;
+        border-radius: 50%;
+        z-index: 200;
+        transition: all 0.2s ease-out;
+    }
+
+    .jl-btn-contact:hover {
+        background-position-y: -45px;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
