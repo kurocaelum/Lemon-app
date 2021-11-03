@@ -133,3 +133,37 @@
 @media screen and (min-width: 1600px) {
     
 }
+
+/* CLASSES UTILITARIAS */
+
+.jl-text-green {
+    color: #2CCB69;
+}
+
+.jl-text-dark {
+    color: #4D4C4C;
+}
+
+.jl-text-light {
+    color: #BCBCBC;
+}
+
+.jl-text-black {
+    color: #000;
+}
+
+.jl-bg-green {
+    background-color: #2CCB69;
+}
+
+.jl-bg-dark {
+    background-color: #4D4C4C;
+}
+
+.jl-bg-light {
+    background-color: #BCBCBC;
+}
+
+.jl-bg-black {
+    background-color: #000;
+}
