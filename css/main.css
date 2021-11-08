@@ -63,6 +63,8 @@ p {
         border-radius: 50%;
         z-index: 200;
         transition: all 0.2s ease-out;
+        border: none;
+        cursor: pointer;
     }
 
     .jl-contact-info {
