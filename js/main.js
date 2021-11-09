@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
     setTimeout(function() {
         pagePreloader.classList.add('jl-fade-out')
         pagePreloader.style.display = 'none';
-    }, 5000)
+    }, 1000)
 })
 
 // Botão de informações de contato

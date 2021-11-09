@@ -21,7 +21,7 @@ p {
     .jl-page-wrapper, .jl-preloader {
         width: 100%;
         height: 100vh;
-        display: block;
+        display: table;
         background-color: #1C1C1C;
         border: 30px solid #000;
     }
@@ -151,6 +151,18 @@ p {
         right: 0;
         background: transparent url('../images/corner.svg') no-repeat;
     }
+
+    /*-----HOME-----*/
+
+    .jl-display-text {
+        margin-top: 10%;
+    }
+
+    #jl-home-presentation {
+        background-image: url('../images/joao-lemon-designer.svg');
+        background-repeat: no-repeat;
+        background-position: 50% bottom;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
@@ -230,6 +242,10 @@ p {
     font-weight: normal;
 }
 
+.jl-title-big {
+    font-size: 120px;
+}
+
 .jl-text-green {
     color: #2CCB69;
 }
@@ -294,6 +310,13 @@ p {
     padding-bottom: 15px;
 }
 
+.jl-full-height {
+    height: 100vh;
+}
+
+.jl-first-section {
+    height: calc(100vh - 30px);
+}
 
 /* CLASSES COMPORTAMENTAIS */
 
