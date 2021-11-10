@@ -16,6 +16,56 @@ p {
     }
 }
 
+@keyframes lineDown {
+    0% {
+        transform: scale(1, 0);
+        transform-origin: top center; /* eixos (Y, X), oposto aos outros elementos */
+    }
+
+    25% {
+        transform: scale(1, 1);
+        transform-origin: top center;
+    }
+
+    75% {
+        transform: scale(1, 1);
+        transform-origin: top center;
+    }
+
+    76% {
+        transform: scale(1, 1);
+        transform-origin: bottom center;
+    }
+
+    100% {
+        transform: scale(1, 0);
+        transform-origin: bottom center;
+    }
+}
+
+@keyframes arrowDown {
+    0% {
+        bottom: 25px;
+    }
+
+    30% {
+        bottom: 15px;
+        opacity: 1;
+    }
+    
+    70% {
+        /* bottom: 10px; */
+        bottom: 15px;
+        opacity: 1;
+    }
+    
+    100% {
+        /* bottom: 5px; */
+        bottom: 15px;
+        opacity: 0;
+    }
+}
+
 /* Menores resoluções presentes em smartphones mais antigos */
 @media screen and (min-width: 320px) {
     .jl-page-wrapper, .jl-preloader {
@@ -190,12 +240,16 @@ p {
     .jl-arrow-down img {
         width: 16px;
         height: 10px;
+        
         display: block;
         position: absolute;
-        bottom: 15px;
+        bottom: 25px;
         left: 0;
         right: 0;
         margin: 0 auto;
+        
+        opacity: 0;
+        animation: arrowDown 1.5s linear 1.5s infinite;
     }
 
     .jl-arrow-down::before {
@@ -208,6 +262,9 @@ p {
         right: 0;
         margin: 0 auto;
         background-color: #000;
+        
+        animation: lineDown 1.5s ease-out infinite;
+        transform-origin: top center; /* eixos (Y, X), oposto aos outros elementos */
     }
 }
 
