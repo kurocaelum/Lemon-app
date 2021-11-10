@@ -46,6 +46,7 @@ p {
 @keyframes arrowDown {
     0% {
         bottom: 25px;
+        opacity: 0;
     }
 
     30% {
@@ -62,7 +63,7 @@ p {
     100% {
         /* bottom: 5px; */
         bottom: 15px;
-        opacity: 0;
+        opacity: 1;
     }
 }
 
