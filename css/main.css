@@ -339,6 +339,22 @@ p {
     
 }
 
+/* BOTÕES */
+
+.jl-btn {
+    display: table;
+    padding: 0 35px;
+    background-color: #2CCB69;
+    height: 45px;
+    color: #1C1C1C;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    font-weight: 600;
+    border-radius: 23px;
+}
+
 /* CLASSES UTILITARIAS */
 
 .jl-title {
