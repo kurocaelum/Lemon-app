@@ -343,16 +343,53 @@ p {
 
 .jl-btn {
     display: table;
-    padding: 0 35px;
-    background-color: #2CCB69;
-    height: 45px;
-    color: #1C1C1C;
-    text-decoration: none;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    line-height: 45px;
     font-weight: 600;
+    border: none;
+    transition: all 0.2s ease-out;
+}
+
+.jl-btn-sm {
+    height: 28px;
+    padding: 0 20px;
+    border-radius: 14px; /* Metade do height */
+    font-size: 11px;
+}
+
+.jl-btn-md {
+    height: 38px;
+    padding: 0 27px;
+    border-radius: 19px; /* Metade do height */
+    font-size: 14px;
+}
+
+.jl-btn-lg {
+    height: 45px;
+    padding: 0 35px;
     border-radius: 23px;
+    font-size: 16px;
+}
+
+.jl-btn-green {
+    background-color: #2CCB69;
+    color: #1C1C1C;
+}
+
+.jl-btn-green:hover {
+    background-color: rgb(6, 135, 55);
+    color: #FFF;
+    /* transform: scale(1.2); */
+}
+
+.jl-btn-dark {
+    background-color: #151515;
+    color: #2CCB69;
+}
+
+.jl-btn-dark:hover {
+    background-color: #2F2F2F;
+    color: #FFF;
 }
 
 /* CLASSES UTILITARIAS */
