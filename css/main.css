@@ -415,6 +415,7 @@ p, label {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     border: none;
+    cursor: pointer;
     transition: all 0.2s ease-out;
     /* text-transform: lowercase; */
 }
