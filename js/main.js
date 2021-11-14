@@ -1,5 +1,6 @@
 // Declarando variáveis
 var btnContact = document.querySelector('.jl-btn-contact')
+var toggleModal = document.querySelectorAll('.jl-toggle-modal')
 
 // Page Preloader
 window.addEventListener('load', function() {
@@ -17,3 +18,15 @@ btnContact.addEventListener('click', function() {
     boxContact.classList.toggle('jl-is-open')
     this.classList.toggle('jl-change-icon')
 })
+
+// Abrindo/fechando modal de orçamento
+for(var i=0; i < toggleModal.length; i++) {
+    toggleModal[i].addEventListener('click', function() {
+        var overlay = document.querySelector('.jl-overlay')
+        var modalOrcamento = document.querySelector('#jl-modal-orcamento')
+
+        overlay.classList.toggle('jl-is-open')
+        modalOrcamento.classList.toggle('jl-is-open')
+        modalOrcamento.classList.toggle('jl-slide-top-in')
+    })
+}

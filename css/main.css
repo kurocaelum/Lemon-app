@@ -16,6 +16,13 @@ p, label {
     }
 }
 
+@keyframes slideTopIn {
+    to {
+        top: 15%; /* Modal está a 15% do topo */
+        opacity: 1;
+    }
+}
+
 @keyframes lineDown {
     0% {
         transform: scale(1, 0);
@@ -110,11 +117,12 @@ p, label {
         padding: 30px;
         border-radius: 0 30px 30px 30px;
         position: fixed;
-        top: 15%;
+        top: -100%; /* Fora da tela */
         left: 0;
         right: 0;
         margin: 0 auto;
         z-index: 1200;
+        opacity: 0;
     }
 
     .jl-modal-header, .jl-modal-body, .jl-form {
@@ -554,6 +562,10 @@ p, label {
 
 .jl-is-open {
     display: block;
+}
+
+.jl-slide-top-in {
+    animation: slideTopIn 0.6s forwards cubic-bezier(0,1.11,0.6,0.89);
 }
 
 .jl-change-icon {
