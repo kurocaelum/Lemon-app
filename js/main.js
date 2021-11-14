@@ -30,3 +30,13 @@ for(var i=0; i < toggleModal.length; i++) {
         modalOrcamento.classList.toggle('jl-slide-top-in')
     })
 }
+
+// Animando elementos on scroll (com Waypoints)
+var myScrollDown = document.querySelector('.jl-scroll-down')
+var waypoint = new Waypoint({
+    element: myScrollDown,
+    handler: function() {
+        myScrollDown.classList.toggle('jl-fade-out')
+    },
+    offset: '80%'
+})
