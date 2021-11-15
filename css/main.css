@@ -343,6 +343,50 @@ p, label {
         animation: lineDown 1.5s ease-out infinite;
         transform-origin: top center; /* eixos (Y, X), oposto aos outros elementos */
     }
+
+    /*-----HOME - PORTFOLIO-----*/
+    .jl-portfolio-navigator {
+        width: 145px;
+        height: 400px;
+        display: table; /* altura dinâmica */
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 26vh;
+    }
+
+    .jl-item-counter {
+        width: 100%;
+        height: 90px;
+        display: block;
+        background-color: blue;
+        margin-bottom: 60px;
+    }
+
+    .jl-item-navigator {
+        width: 100%;
+        display: table;
+        background-color: greenyellow;
+    }
+
+    .jl-item-navigator a {
+        width: 20px;
+        height: 1px;
+        background-color: purple;
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    .jl-item-navigator a:last-child {
+        margin-bottom: 30px;
+    }
+
+    .jl-portfolio-next-prev {
+        width: 100%;
+        height: 45px;
+        background-color: deeppink;
+        display: block;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
@@ -552,6 +596,7 @@ p, label {
 
 .jl-full-height {
     height: 100vh;
+    position: relative;
 }
 
 .jl-first-section {
