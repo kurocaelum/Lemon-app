@@ -354,7 +354,7 @@ p, label {
         top: 26vh;
     }
 
-    .jl-item-counter {
+    .jl-navigator-counter {
         width: 100%;
         height: 90px;
         display: block;
@@ -362,7 +362,7 @@ p, label {
         position: relative;
     }
 
-    .jl-item-counter::before {
+    .jl-navigator-counter::before {
         content: '';
         display: block;
         width: 35px;
@@ -373,7 +373,7 @@ p, label {
         left: 0;
     }
 
-    .jl-item-counter span {
+    .jl-navigator-counter span {
         font-family: 'Open Sans', sans-serif;
         font-size: 120px;
         font-weight: 600;
@@ -405,9 +405,36 @@ p, label {
     .jl-items-next-prev {
         width: 100%;
         height: 45px;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #2C2C2C;
-        border-radius: 0 23px 23px 0;
+        border-radius: 23px;
+    }
+
+    .jl-items-next-prev > div {
+        height: 32px;
+    }
+
+    .jl-items-counter {
+        font-family: 'Open Sans', sans-serif;
+        color: #4D4C4C;
+        line-height: 32px;
+    }
+
+    .jl-items-counter span:nth-child(1) {
+        color: #BCBCBC;
+    }
+
+    .jl-item-prev, .jl-item-next {
+        width: 45px;
+        color:#2CCB69;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    ion-icon {
+        font-size: 32px;
     }
 }
 
@@ -541,7 +568,7 @@ p, label {
     color: #FFF;
 }
 
-/* CLASSES UTILITARIAS */
+/* CLASSES UTILITARIAS / AUXILIARES */
 
 .jl-title {
     font-family: 'Abril Fatface', serif;
@@ -627,6 +654,16 @@ p, label {
 
 .jl-no-padding {
     padding: 0 !important;
+}
+
+.jl-no-radius-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.jl-no-radius-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 /* CLASSES COMPORTAMENTAIS */
