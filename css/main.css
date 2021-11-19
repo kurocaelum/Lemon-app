@@ -436,6 +436,25 @@ p, label {
     ion-icon {
         font-size: 32px;
     }
+
+    .jl-slider-container {
+        width: 100%; /* TEMPORARIO apenas para visualisar e testar blocos do slider */
+        background-color: white;
+    }
+
+    .jl-slider-list {
+        width: auto;
+        height: 700px;
+        display: block;
+        background-color: deeppink;
+        list-style: none;
+    }
+
+    .jl-slider-item {
+        display: inline-block;
+        width: 500px;
+        height: 500px;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
@@ -682,4 +701,24 @@ p, label {
 
 .jl-fade-out {
     animation: fadeOut 2s forwards ease-out;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+.purple {
+    background: purple;
+}
+
+.green {
+    background: green;
 }
