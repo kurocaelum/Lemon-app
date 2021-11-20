@@ -63,3 +63,36 @@ for(var p=0; p < sliderItem.length; p++) {
 }
 
 sliderList.style.width = sliderListWidth + 'px'
+
+// Fazendo animação do slider onClick
+var prevItem = document.querySelector('.jl-item-prev')
+var nextItem = document.querySelector('.jl-item-next')
+var sliderPos = 0
+
+nextItem.addEventListener('click', function(){
+    var lastItem = sliderListWidth - containerWidth
+    
+    if((-1 * sliderPos) === lastItem) {
+        return
+    }
+    
+    sliderPos -= containerWidth
+    
+    anime({
+        targets: sliderList,
+        translateX: sliderPos
+      });
+})
+
+prevItem.addEventListener('click', function(){
+    if(sliderPos === 0) {
+        return
+    }
+    
+    sliderPos += containerWidth
+    
+    anime({
+        targets: sliderList,
+        translateX: sliderPos
+      });
+})
