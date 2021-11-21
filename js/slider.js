@@ -9,6 +9,7 @@ var nextItem = document.querySelector('.jl-item-next')
 var sliderPos = 0
 var currentSlide = document.querySelector('.jl-current-slide')
 var totalSlide = document.querySelector('.jl-total-slide')
+var currentCounter = 1
 
 // Capturando larguras individuais
 var containerWidth = sliderContainer.parentElement.offsetWidth
@@ -16,7 +17,7 @@ var containerWidth = sliderContainer.parentElement.offsetWidth
 // Passando larguras dinâmicas
 sliderContainer.style.width = containerWidth + 'px'
 
-for(var p=0; p < sliderTotalItems; p++) {
+for (var p = 0; p < sliderTotalItems; p++) {
     sliderItem[p].style.width = containerWidth + 'px'
 
     var sliderItemWidth = sliderItem[p].offsetWidth
@@ -25,50 +26,58 @@ for(var p=0; p < sliderTotalItems; p++) {
 
 sliderList.style.width = sliderListWidth + 'px'
 
-// HANDLERS
-var nextSlideAnim = function() {
+/* HANDLERS */
+
+var nextSlideAnim = function () {
     var lastItem = sliderListWidth - containerWidth
-    
-    if((-1 * sliderPos) === lastItem) {
+
+    if (-1 * sliderPos === lastItem) {
         return
     }
-    
+
     sliderPos -= containerWidth
-    
+
     anime({
         targets: sliderList,
-        translateX: sliderPos
-    });
+        translateX: sliderPos,
+    })
 }
 
-var prevSlideAnim = function() {
-    if(sliderPos === 0) {
-        return
-    }
-    
+var prevSlideAnim = function () {
+    if (sliderPos === 0) return
+
     sliderPos += containerWidth
-    
+
     anime({
         targets: sliderList,
-        translateX: sliderPos
-    });
+        translateX: sliderPos,
+    })
 }
 
-// Counter formatter
-var counterFormatter = function(n) {
-    if(n < 10) return '0' + n
+var counterFormatter = function (n) {
+    if (n < 10) return '0' + n
     else return n
 }
 
-// ACTIONS
+var counterAdd = function () {
+    if (currentCounter < sliderTotalItems) currentSlide.innerHTML = counterFormatter(++currentCounter)
+}
+
+var counterRemove = function () {
+    if (currentCounter > 1) currentSlide.innerHTML = counterFormatter(--currentCounter)
+}
+
+/* ACTIONS */
 
 totalSlide.innerHTML = counterFormatter(sliderTotalItems)
+currentSlide.innerHTML = counterFormatter(currentCounter)
 
-
-nextItem.addEventListener('click', function(){
+nextItem.addEventListener('click', function () {
     nextSlideAnim()
+    counterAdd()
 })
 
-prevItem.addEventListener('click', function(){
+prevItem.addEventListener('click', function () {
     prevSlideAnim()
+    counterRemove()
 })
