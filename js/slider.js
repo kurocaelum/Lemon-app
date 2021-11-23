@@ -74,6 +74,11 @@ var setActiveNav = function () {
         
         if (myNavNum === currentCounter) {
             navItems[nv].classList.add('jl-item-active')
+
+            anime({
+                targets: navItems[nv],
+                width: 90,
+            })
         }
     }
 }
@@ -81,6 +86,10 @@ var setActiveNav = function () {
 var changeActive = function () {
     for(var rm = 0; rm < navItems.length; rm++) {
         navItems[rm].classList.remove('jl-item-active')
+        anime({
+            targets: navItems[rm],
+            width: 20,
+        })
     }
 
     setActiveNav()
@@ -90,6 +99,10 @@ var changeActive = function () {
 
 totalSlide.innerHTML = counterFormatter(sliderTotalItems)
 currentSlide.innerHTML = counterFormatter(currentCounter)
+anime({
+    targets: '.jl-item-active',
+    width: 90,
+})
 
 nextItem.addEventListener('click', function () {
     nextSlideAnim()
