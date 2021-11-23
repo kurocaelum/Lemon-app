@@ -10,6 +10,7 @@ var sliderPos = 0
 var currentSlide = document.querySelector('.jl-current-slide')
 var totalSlide = document.querySelector('.jl-total-slide')
 var currentCounter = 1
+var navItems = document.querySelectorAll('.jl-item-navigator a')
 
 // Capturando larguras individuais
 var containerWidth = sliderContainer.parentElement.offsetWidth
@@ -67,6 +68,24 @@ var counterRemove = function () {
     if (currentCounter > 1) currentSlide.innerHTML = counterFormatter(--currentCounter)
 }
 
+var setActiveNav = function () {
+    for(var nv = 0; nv < navItems.length; nv++) {
+        let myNavNum = parseInt(navItems[nv].getAttribute('data-nav'))
+        
+        if (myNavNum === currentCounter) {
+            navItems[nv].classList.add('jl-item-active')
+        }
+    }
+}
+
+var changeActive = function () {
+    for(var rm = 0; rm < navItems.length; rm++) {
+        navItems[rm].classList.remove('jl-item-active')
+    }
+
+    setActiveNav()
+}
+
 /* ACTIONS */
 
 totalSlide.innerHTML = counterFormatter(sliderTotalItems)
@@ -75,9 +94,11 @@ currentSlide.innerHTML = counterFormatter(currentCounter)
 nextItem.addEventListener('click', function () {
     nextSlideAnim()
     counterAdd()
+    changeActive()
 })
 
 prevItem.addEventListener('click', function () {
     prevSlideAnim()
     counterRemove()
+    changeActive()
 })
