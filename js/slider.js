@@ -11,6 +11,7 @@ var currentSlide = document.querySelector('.jl-current-slide')
 var totalSlide = document.querySelector('.jl-total-slide')
 var currentCounter = 1
 var navItems = document.querySelectorAll('.jl-item-navigator a')
+var navCounter = document.querySelector('.jl-navigator-counter span')
 
 // Capturando larguras individuais
 var containerWidth = sliderContainer.parentElement.offsetWidth
@@ -61,11 +62,17 @@ var counterFormatter = function (n) {
 }
 
 var counterAdd = function () {
-    if (currentCounter < sliderTotalItems) currentSlide.innerHTML = counterFormatter(++currentCounter)
+    if (currentCounter < sliderTotalItems) {
+        currentSlide.innerHTML = counterFormatter(++currentCounter)
+        navCounter.innerHTML = counterFormatter(currentCounter)
+    }
 }
 
 var counterRemove = function () {
-    if (currentCounter > 1) currentSlide.innerHTML = counterFormatter(--currentCounter)
+    if (currentCounter > 1) {
+        currentSlide.innerHTML = counterFormatter(--currentCounter)
+        navCounter.innerHTML = counterFormatter(currentCounter)
+    }
 }
 
 var setActiveNav = function () {
