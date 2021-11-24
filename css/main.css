@@ -443,7 +443,6 @@ label {
     }
 
     .jl-slider-container {
-        background-color: white;
         display: block;
         overflow: hidden;
     }
@@ -452,7 +451,6 @@ label {
         width: auto;
         height: 700px;
         display: block;
-        background-color: deeppink;
         list-style: none;
     }
 
@@ -460,6 +458,15 @@ label {
         display: block;
         height: 500px;
         float: left;
+        margin-top: calc(26vh - 75px);
+    }
+
+    .jl-portfolio-item-info {
+        width: 100%;
+        display: table;
+        margin-top: 73px;
+        position: relative;
+        top: -5px;
     }
 }
 
@@ -595,7 +602,11 @@ label {
     font-weight: normal;
 }
 
-.jl-title-big {
+.jl-title-large {
+    font-size: 64px;
+}
+
+.jl-title-xlarge {
     font-size: 120px;
 }
 
@@ -661,6 +672,38 @@ label {
 }
 .jl-pad-bottom-15 {
     padding-bottom: 15px;
+}
+
+.jl-mar-30 {
+    margin: 30px;
+}
+.jl-mar-top-30 {
+    margin-top: 30px;
+}
+.jl-mar-right-30 {
+    margin-right: 30px;
+}
+.jl-mar-left-30 {
+    margin-left: 30px;
+}
+.jl-mar-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.jl-pad-30 {
+    padding: 30px;
+}
+.jl-pad-top-30 {
+    padding-top: 30px;
+}
+.jl-pad-right-30 {
+    padding-right: 30px;
+}
+.jl-pad-left-30 {
+    padding-left: 30px;
+}
+.jl-pad-bottom-30 {
+    padding-bottom: 30px;
 }
 
 .jl-full-height {
