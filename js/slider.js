@@ -99,6 +99,8 @@ var setActiveSlide = function () {
         if (mySlideNum === currentCounter) {
             sliderItem[sld].classList.add('jl-slide-active')
             sliderItem[sld].querySelector('.jl-portfolio-item-box').classList.add('jl-scale-right')
+            sliderItem[sld].querySelector('.jl-portfolio-item-thumb img').classList.add('jl-scale-up')
+            sliderItem[sld].querySelector('.jl-portfolio-item-info').classList.add('jl-fade-from-left')
         }
     }
 }
@@ -112,8 +114,13 @@ var changeActive = function () {
         })
     }
 
-    for (let rm = 0; rm < sliderItem.length; rm++) sliderItem[rm].classList.remove('jl-slide-active')
-
+    for (let rm = 0; rm < sliderItem.length; rm++) {
+        sliderItem[rm].classList.remove('jl-slide-active')
+        sliderItem[rm].querySelector('.jl-portfolio-item-box').classList.remove('jl-scale-right')
+        sliderItem[rm].querySelector('.jl-portfolio-item-thumb img').classList.remove('jl-scale-up')
+        sliderItem[rm].querySelector('.jl-portfolio-item-info').classList.remove('jl-fade-from-left')
+    }
+    
     setActiveNav()
     setActiveSlide()
 }

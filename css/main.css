@@ -17,6 +17,13 @@ label {
     }
 }
 
+@keyframes fadeFromLeft {
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
 @keyframes slideTopIn {
     to {
         top: 15%; /* Modal está a 15% do topo */
@@ -27,6 +34,12 @@ label {
 @keyframes scaleRight {
     to {
         transform: scaleX(1);
+    }
+}
+
+@keyframes scaleUp {
+    to {
+        transform: scale(1);
     }
 }
 
@@ -473,6 +486,8 @@ label {
         margin-top: 73px;
         position: relative;
         top: -5px;
+        opacity: 0;
+        left: -75px;
     }
 
     .jl-portfolio-item-thumb {
@@ -500,6 +515,7 @@ label {
         height: auto;
         position: relative;
         left: -75px;
+        transform: scale(0);
     }
 }
 
@@ -780,7 +796,15 @@ label {
     animation: fadeOut 2s forwards ease-out;
 }
 
+.jl-fade-from-left {
+    animation: fadeFromLeft 2s 0.7s forwards cubic-bezier(0,1.01,0.32,1);
+}
+
 .jl-scale-right {
     /* 0.7s de duração, 0.2s de delay */
     animation: scaleRight 0.7s 0.2s forwards cubic-bezier(0,1.01,0.32,1);
+}
+
+.jl-scale-up {
+    animation: scaleUp 0.5s 0.5s forwards cubic-bezier(0,1.01,0.32,1);
 }
