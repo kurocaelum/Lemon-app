@@ -42,6 +42,7 @@ var nextSlideAnim = function () {
     anime({
         targets: sliderList,
         translateX: sliderPos,
+        easing: 'cubicBezier(0,1.01,0.32,1)',
     })
 }
 
@@ -53,6 +54,7 @@ var prevSlideAnim = function () {
     anime({
         targets: sliderList,
         translateX: sliderPos,
+        easing: 'cubicBezier(0,1.01,0.32,1)',
     })
 }
 
@@ -76,9 +78,9 @@ var counterRemove = function () {
 }
 
 var setActiveNav = function () {
-    for(var nv = 0; nv < navItems.length; nv++) {
+    for (var nv = 0; nv < navItems.length; nv++) {
         let myNavNum = parseInt(navItems[nv].getAttribute('data-nav'))
-        
+
         if (myNavNum === currentCounter) {
             navItems[nv].classList.add('jl-item-active')
 
@@ -90,8 +92,19 @@ var setActiveNav = function () {
     }
 }
 
+var setActiveSlide = function () {
+    for (var sld = 0; sld < sliderItem.length; sld++) {
+        let mySlideNum = parseInt(sliderItem[sld].getAttribute('data-slide'))
+
+        if (mySlideNum === currentCounter) {
+            sliderItem[sld].classList.add('jl-slide-active')
+            sliderItem[sld].querySelector('.jl-portfolio-item-box').classList.add('jl-scale-right')
+        }
+    }
+}
+
 var changeActive = function () {
-    for(var rm = 0; rm < navItems.length; rm++) {
+    for (let rm = 0; rm < navItems.length; rm++) {
         navItems[rm].classList.remove('jl-item-active')
         anime({
             targets: navItems[rm],
@@ -99,7 +112,10 @@ var changeActive = function () {
         })
     }
 
+    for (let rm = 0; rm < sliderItem.length; rm++) sliderItem[rm].classList.remove('jl-slide-active')
+
     setActiveNav()
+    setActiveSlide()
 }
 
 /* ACTIONS */
