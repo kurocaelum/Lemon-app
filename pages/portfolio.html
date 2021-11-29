@@ -13,6 +13,111 @@
   </head>
 
   <body>
-      <h1>PORTFOLIO</h1>
+    <div class="jl-preloader">
+      <div class="jl-preloader-inner">
+        <img src="../images/lemon-loader.svg" class="jl-mar-bottom-15" alt="Carregando..." />
+        <p class="jl-text-light jl-mar-top-15">Aguarde um pouquinho… Estou preparando a limonada</p>
+      </div>
+    </div>
+
+    <div class="jl-overlay jl-toggle-modal"></div>
+
+    <div class="jl-modal jl-bg-black" id="jl-modal-orcamento">
+      <div class="jl-modal-header">
+        <h1 class="jl-title jl-text-green">Solicite um Orçamento</h1>
+        <button class="jl-close-modal jl-toggle-modal">X</button>
+      </div>
+
+      <div class="jl-modal-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="jl-text-light">Por favor informe os dados abaixo e eu entrarei em contato com você o mais breve possível.</p>
+          </div>
+        </div>
+
+        <div class="row jl-mar-top-15">
+          <div class="col-sm-12">
+            <form class="jl-form">
+              <div class="row">
+                <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                  <label for="Nome" class="jl-text-light">Nome</label>
+                  <input type="text" name="Nome" id="jl-nome" class="jl-field">
+                </div>
+                <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                  <label for="Email" class="jl-text-light">Email</label>
+                  <input type="email" name="Email" id="jl-email" class="jl-field">
+                </div>
+                <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                  <label for="Telefone" class="jl-text-light">Telefone</label>
+                  <input type="tel" name="Telefone" id="jl-telefone" class="jl-field">
+                </div>
+                <div class="col-sm-12 col-md-6 jl-mar-bottom-15">
+                  <label for="Site" class="jl-text-light">Site</label>
+                  <input type="text" name="Site" id="jl-site" class="jl-field">
+                </div>
+                <div class="col-sm-12 col-md-12 jl-mar-top-15 jl-mar-bottom-15">
+                  <label for="Mensagem" class="jl-text-light">Descreva abaixo o projeto na qual você precisa de orçamento:</label>
+                  <textarea name="Mensagem" id="jl-mensagem" class="jl-textarea" rows="8"></textarea>
+                </div>
+              </div>
+
+              <div class="row justify-content-end jl-mar-top-15">
+                <div class="col-sm-12 col-md-6">
+                  <button class="jl-btn jl-btn-large jl-btn-green jl-btn-block">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="jl-topbar">
+      <div class="jl-logo">
+        <img src="../images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
+      </div>
+
+      <nav class="jl-menu">
+        <a href="../index.html">Home</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="#">Sobre</a>
+      </nav>
+    </header>
+
+    <div class="jl-contact-info jl-bg-black jl-text-light">
+      <div class="jl-contact-info-inner">
+        <h2 class="jl-title jl-text-green">Contato</h2>
+        <p>joaolemon@mail.com</p>
+        <p>+55 (84) 99913-0442</p>
+        <div class="jl-social-links">
+          <a href="#" class="jl-social">
+            <img src="../images/icon-instagram.svg" alt="Instagram" />
+          </a>
+
+          <a href="#" class="jl-social">
+            <img src="../images/icon-twitter.svg" alt="Twitter" />
+          </a>
+
+          <a href="#" class="jl-social">
+            <img src="../images/icon-dribbble.svg" alt="Dribbble" />
+          </a>
+        </div>
+      </div>
+
+      <div class="jl-corner"></div>
+    </div>
+
+    <button class="jl-btn-contact"></button>
+
+    <div class="jl-page-wrapper">
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js" integrity="sha512-lzIDzaYCox5oeC0ymj6ho5fRdMrCYkhHfVEm3fySZStdwG85y9SxTcIFYYEUiW1KYbkfiInVFkGofRlYlkHgLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/shortcuts/inview.min.js" integrity="sha512-Czmir+rgvWcOkdGH0e2GxFiAcrPmOe9NsZW6Z8Jv/xDZuNRD9XRsoPsbnMxvi8SjT7JvCA5Zx62JN0Idv1W5EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/anime.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
