@@ -1,8 +1,8 @@
 // Declarando variáveis do slider
 var sliderContainer = document.querySelector('.jl-slider-container')
 var sliderList = document.querySelector('.jl-slider-list')
-var sliderItem = document.querySelectorAll('.jl-slider-item')
-const sliderTotalItems = sliderItem.length
+var portfolioItem = document.querySelectorAll('.jl-portfolio-item')
+const sliderTotalItems = portfolioItem.length
 var sliderListWidth = null
 var prevItem = document.querySelector('.jl-item-prev')
 var nextItem = document.querySelector('.jl-item-next')
@@ -20,9 +20,9 @@ var containerWidth = sliderContainer.parentElement.offsetWidth
 sliderContainer.style.width = containerWidth + 'px'
 
 for (var p = 0; p < sliderTotalItems; p++) {
-    sliderItem[p].style.width = containerWidth + 'px'
+    portfolioItem[p].style.width = containerWidth + 'px'
 
-    var sliderItemWidth = sliderItem[p].offsetWidth
+    var sliderItemWidth = portfolioItem[p].offsetWidth
     sliderListWidth += sliderItemWidth
 }
 
@@ -93,14 +93,14 @@ var setActiveNav = function () {
 }
 
 var setActiveSlide = function () {
-    for (var sld = 0; sld < sliderItem.length; sld++) {
-        let mySlideNum = parseInt(sliderItem[sld].getAttribute('data-slide'))
+    for (var sld = 0; sld < portfolioItem.length; sld++) {
+        let mySlideNum = parseInt(portfolioItem[sld].getAttribute('data-slide'))
 
         if (mySlideNum === currentCounter) {
-            sliderItem[sld].classList.add('jl-slide-active')
-            sliderItem[sld].querySelector('.jl-portfolio-item-box').classList.add('jl-scale-right')
-            sliderItem[sld].querySelector('.jl-portfolio-item-thumb img').classList.add('jl-scale-up')
-            sliderItem[sld].querySelector('.jl-portfolio-item-info').classList.add('jl-fade-from-left')
+            portfolioItem[sld].classList.add('jl-slide-active')
+            portfolioItem[sld].querySelector('.jl-portfolio-item-box').classList.add('jl-scale-right')
+            portfolioItem[sld].querySelector('.jl-portfolio-item-thumb img').classList.add('jl-scale-up')
+            portfolioItem[sld].querySelector('.jl-portfolio-item-info').classList.add('jl-fade-from-left')
         }
     }
 }
@@ -114,11 +114,11 @@ var changeActive = function () {
         })
     }
 
-    for (let rm = 0; rm < sliderItem.length; rm++) {
-        sliderItem[rm].classList.remove('jl-slide-active')
-        sliderItem[rm].querySelector('.jl-portfolio-item-box').classList.remove('jl-scale-right')
-        sliderItem[rm].querySelector('.jl-portfolio-item-thumb img').classList.remove('jl-scale-up')
-        sliderItem[rm].querySelector('.jl-portfolio-item-info').classList.remove('jl-fade-from-left')
+    for (let rm = 0; rm < portfolioItem.length; rm++) {
+        portfolioItem[rm].classList.remove('jl-slide-active')
+        portfolioItem[rm].querySelector('.jl-portfolio-item-box').classList.remove('jl-scale-right')
+        portfolioItem[rm].querySelector('.jl-portfolio-item-thumb img').classList.remove('jl-scale-up')
+        portfolioItem[rm].querySelector('.jl-portfolio-item-info').classList.remove('jl-fade-from-left')
     }
     
     setActiveNav()
