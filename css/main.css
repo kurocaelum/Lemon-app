@@ -523,6 +523,12 @@ label {
         left: -75px;
         transform: scale(0);
     }
+
+    /*-----PORTFOLIO-----*/
+
+    .jl-section-offset-top {
+        margin-top: 130px;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
