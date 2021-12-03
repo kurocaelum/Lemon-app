@@ -888,3 +888,19 @@ label {
 .jl-scale-up {
     animation: scaleUp 0.5s 0.5s forwards cubic-bezier(0,1.01,0.32,1);
 }
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
