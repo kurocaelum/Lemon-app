@@ -585,6 +585,13 @@ label {
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb img {
         left: 75px;
     }
+
+    /*-----SOBRE-----*/
+
+    #jl-avatar-sobre img {
+        position: relative;
+        left: -15px;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
@@ -861,6 +868,43 @@ label {
 .jl-no-radius-right {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.jl-box-img {
+    width: 100%;
+    display: table;
+}
+
+.jl-img-responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.jl-page-list {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jl-page-list > li {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.jl-page-list > li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-color: #2ccb69;
 }
 
 /* CLASSES COMPORTAMENTAIS */
