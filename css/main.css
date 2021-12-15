@@ -615,6 +615,17 @@ label {
         position: relative;
         left: -15px;
     }
+
+    /*-----DETALHES-----*/
+
+    .jl-hero {
+        height: 500px;
+        background-image: url('../pages/portfolio/img/hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
