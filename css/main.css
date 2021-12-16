@@ -397,7 +397,7 @@ label {
         height: 400px;
         display: table; /* altura dinâmica */
         position: absolute;
-        left: 0;
+        left: 15px;
         top: 26vh;
     }
 
