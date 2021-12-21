@@ -20,6 +20,8 @@ const getImageSrc = function() {
     }
 }
 
+getImageSrc()
+
 for (let c = 0; c < closeGallery.length; c++) {
     closeGallery[c].addEventListener('click', function() {
         overlay.classList.remove('jl-is-open')
@@ -27,4 +29,9 @@ for (let c = 0; c < closeGallery.length; c++) {
     })
 }
 
-getImageSrc()
+/* TODO next/prev */
+// Identificar item atual no frame (overlay)
+// Definir numero do proximo item (next)
+// Loop procurando numero do proximo item
+// Capturar next.data-src
+// Passar data-src para tag de img-frame

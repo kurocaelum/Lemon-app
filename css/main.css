@@ -709,6 +709,11 @@ label {
         position: relative;
     }
 
+    .jl-gallery-frame-container .jl-items-next-prev {
+        width: 150px;
+        margin: 75px auto 0 auto;
+    }
+
     .jl-close-gallery {
         width: 45px;
         height: 45px;
