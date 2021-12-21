@@ -124,8 +124,7 @@ label {
     .jl-overlay {
         width: 100%;
         height: 100vh;
-        /* display: none; */
-        display: block; /* TODO temporario */
+        display: none;
         position: fixed;
         z-index: 1000;
         top: 0;
@@ -694,7 +693,7 @@ label {
 
     .jl-gallery-frame-container {
         width: 400px;
-        display: table;
+        display: none;
         position: fixed;
         top: 30px;
         left: 0;
@@ -703,10 +702,32 @@ label {
         z-index: 1100;
     }
 
+    .jl-gallery-frame-inner {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+
     img.jl-gallery-frame {
         width: 100%;
         max-width: 100%;
         height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1300;
+    }
+
+    .jl-gallery-frame-image {
+        width: 87%;
+        max-width: 87%;
+        margin: 0 auto;
+        display: block;
+        z-index: 1200;
+        border-radius: 30px;
+        position: relative;
+        top: 20px;
     }
 }
 
