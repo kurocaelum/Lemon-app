@@ -1,3 +1,7 @@
+var postGallery = document.querySelector('.jl-post-gallery')
+var postGalleryHeight = postGallery.clientHeight
+postGallery.style.height = (postGalleryHeight - 270) + 'px'
+
 var overlay = document.querySelector('.jl-overlay')
 var frameImage = document.querySelector('.jl-gallery-frame-image')
 var frameContainer = document.querySelector('.jl-gallery-frame-container')

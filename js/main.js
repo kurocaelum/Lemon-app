@@ -31,11 +31,6 @@ for (var i = 0; i < toggleModal.length; i++) {
     })
 }
 
-// PAGE DETALHES
-var postGallery = document.querySelector('.jl-post-gallery')
-var postGalleryHeight = postGallery.clientHeight
-postGallery.style.height = (postGalleryHeight - 270) + 'px'
-
 // Animando elementos on scroll (com Waypoints)
 var myScrollDown = document.querySelector('.jl-scroll-down')
 var waypoint = new Waypoint({
