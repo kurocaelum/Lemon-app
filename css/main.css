@@ -709,6 +709,28 @@ label {
         position: relative;
     }
 
+    .jl-close-gallery {
+        width: 45px;
+        height: 45px;
+        display: block;
+        background-color: #000;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        top: -15px;
+        right: -45px;
+        z-index: 1200;
+        cursor: pointer;
+    }
+
+    .jl-close-gallery ion-icon {
+        color: #2ccb69;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 45px;
+    }
+
     img.jl-gallery-frame {
         width: 100%;
         max-width: 100%;

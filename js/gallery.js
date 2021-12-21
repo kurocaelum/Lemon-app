@@ -2,6 +2,7 @@ var overlay = document.querySelector('.jl-overlay')
 var frameImage = document.querySelector('.jl-gallery-frame-image')
 var frameContainer = document.querySelector('.jl-gallery-frame-container')
 var galleryImages = document.querySelectorAll('.jl-thumb-img')
+var closeGallery = document.querySelectorAll('.jl-toggle-gallery')
 
 const getImageSrc = function() {
     for(var i = 0; i < galleryImages.length; i++) {
@@ -13,6 +14,13 @@ const getImageSrc = function() {
             frameContainer.classList.add('jl-is-open')
         })
     }
+}
+
+for (let c = 0; c < closeGallery.length; c++) {
+    closeGallery[c].addEventListener('click', function() {
+        overlay.classList.remove('jl-is-open')
+        frameContainer.classList.remove('jl-is-open')
+    })
 }
 
 getImageSrc()
