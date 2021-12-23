@@ -11,6 +11,17 @@ var closeGallery = document.querySelectorAll('.jl-toggle-gallery')
 var btnNext = document.querySelector('.jl-item-next')
 var btnPrev = document.querySelector('.jl-item-prev')
 
+var currCounter = document.querySelector('.jl-current-slide')
+var totalCounter = document.querySelector('.jl-total-slide')
+
+
+var counterFormatter = function (n) {
+    if (n < 10) return '0' + n
+    else return n
+}
+
+totalCounter.innerHTML = counterFormatter(galleryImages.length)
+
 const getImageSrc = function() {
     for(var i = 0; i < galleryImages.length; i++) {
         galleryImages[i].addEventListener('click', function() {
@@ -21,6 +32,8 @@ const getImageSrc = function() {
 
             overlay.classList.add('jl-is-open')
             frameContainer.classList.add('jl-is-open')
+
+            currCounter.innerHTML = counterFormatter(itemNum)
         })
     }
 }
@@ -33,8 +46,6 @@ for (let c = 0; c < closeGallery.length; c++) {
         frameContainer.classList.remove('jl-is-open')
     })
 }
-
-/* TODO next/prev */
 
 const nextItem = function() {
     // Identificar item atual no frame (overlay)
@@ -56,6 +67,7 @@ const nextItem = function() {
             // Passar data-src para tag de img-frame
             frameImage.setAttribute('src', nextSrc)
             frameImage.setAttribute('data-index', nextIndex)
+            currCounter.innerHTML = counterFormatter(nextIndex)
         }
     }
 }
@@ -74,6 +86,7 @@ const prevItem = function() {
 
             frameImage.setAttribute('src', prevSrc)
             frameImage.setAttribute('data-index', prevIndex)
+            currCounter.innerHTML = counterFormatter(prevIndex)
         }
     }
 }
