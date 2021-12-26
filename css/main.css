@@ -94,6 +94,13 @@ label {
     }
 }
 
+@keyframes skeletonBlur {
+    to {
+        /* Ir de -100% fora para 150% fora da box no eixo X (eixo Y não animado) */
+        background-position: 250% -150px;
+    }
+}
+
 /* Menores resoluções presentes em smartphones mais antigos */
 @media screen and (min-width: 320px) {
     .jl-page-wrapper,
@@ -730,9 +737,13 @@ label {
 
     .jl-gallery-frame-inner .jl-skeleton-loading > div {
         width: 90%;
-        background-color: #bcbcbc;
+        background-color: #dedede;
         margin: 10% 0;
         border-radius: 8px;
+        background-image: url(../images/skeleton-loading-blur.svg);
+        background-repeat: no-repeat;
+        background-position: -100% -150px;
+        animation: skeletonBlur 2s infinite ease-out;
     }
 
     .jl-gallery-frame-inner .jl-skeleton-loading > div:first-child,
