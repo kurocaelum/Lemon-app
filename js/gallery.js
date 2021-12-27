@@ -14,6 +14,8 @@ var btnPrev = document.querySelector('.jl-item-prev')
 var currCounter = document.querySelector('.jl-current-slide')
 var totalCounter = document.querySelector('.jl-total-slide')
 
+var skeletonLoading = document.querySelector('.jl-skeleton-loading')
+
 
 var counterFormatter = function (n) {
     if (n < 10) return '0' + n
@@ -22,11 +24,27 @@ var counterFormatter = function (n) {
 
 totalCounter.innerHTML = counterFormatter(galleryImages.length)
 
+// Skeleton loading
+const skeletonAnim = function(imagem) {
+    var myImage = new Image()
+    myImage.src = imagem
+    myImage.addEventListener('load', function() {
+        skeletonLoading.classList.add('jl-fade-out')
+        setTimeout(function() {
+            skeletonLoading.style.display = 'none'
+        }, 2000)
+    })
+}
+
+// Open gallery modal
 const getImageSrc = function() {
     for(var i = 0; i < galleryImages.length; i++) {
         galleryImages[i].addEventListener('click', function() {
             var imageSrc = this.getAttribute('data-src')
             var itemNum = this.getAttribute('data-item')
+
+            skeletonLoading.style.display = 'flex'
+
             frameImage.setAttribute('src', imageSrc)
             frameImage.setAttribute('data-index', itemNum)
 
@@ -34,6 +52,8 @@ const getImageSrc = function() {
             frameContainer.classList.add('jl-is-open')
 
             currCounter.innerHTML = counterFormatter(itemNum)
+
+            skeletonAnim(imageSrc)
         })
     }
 }
@@ -64,10 +84,14 @@ const nextItem = function() {
             var nextSrc = item.getAttribute('data-src')
             var nextIndex = item.getAttribute('data-item')
 
+            skeletonLoading.style.display = 'flex'
+
             // Passar data-src para tag de img-frame
             frameImage.setAttribute('src', nextSrc)
             frameImage.setAttribute('data-index', nextIndex)
             currCounter.innerHTML = counterFormatter(nextIndex)
+
+            skeletonAnim(nextSrc)
         }
     }
 }
@@ -84,9 +108,13 @@ const prevItem = function() {
             var prevSrc = item.getAttribute('data-src')
             var prevIndex = item.getAttribute('data-item')
 
+            skeletonLoading.style.display = 'flex'
+
             frameImage.setAttribute('src', prevSrc)
             frameImage.setAttribute('data-index', prevIndex)
             currCounter.innerHTML = counterFormatter(prevIndex)
+
+            skeletonAnim(prevSrc)
         }
     }
 }
