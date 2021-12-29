@@ -230,6 +230,27 @@ label {
         display: none;
     }
     
+    .jl-btn-menu-mob {
+        width: 54px;
+        height: 54px;
+        display: block;
+        border-radius: 50%;
+        border: none;
+        background-color: #2ccb69;
+        color: #000;
+
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        z-index: 1250;
+
+        cursor: pointer;
+    }
+
+    .jl-btn-menu-mob ion-icon {
+        vertical-align: middle;
+    }
+
     .jl-menu-mob {
         width: 240px;
         height: 100vh;
@@ -240,7 +261,7 @@ label {
         right: 0;
         top: 0;
         z-index: 1200;
-        padding: 80px 30px 30px;
+        padding: 100px 30px 30px;
     }
 
     .jl-menu-mob a {
