@@ -128,7 +128,7 @@ label {
         margin-top: -45px;
     }
 
-    .jl-overlay {
+    .jl-overlay, .jl-menu-overlay {
         width: 100%;
         height: 100vh;
         display: none;
@@ -258,10 +258,19 @@ label {
         background-color: #000;
 
         position: fixed;
-        right: 0;
         top: 0;
         z-index: 1200;
         padding: 100px 30px 30px;
+        transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    .jl-menu-is-open {
+        right: 0;
+    }
+
+    .jl-menu-is-closed {
+        /* Fora da tela, pois jl-menu-mob tem 240px de largura */
+        right: -240px;
     }
 
     .jl-menu-mob a {
@@ -856,7 +865,7 @@ label {
 }
 
 @media screen and (min-width: 992px) {
-    .jl-menu-mob {
+    .jl-menu-mob, .jl-btn-menu-mob {
         display: none;
     }
     

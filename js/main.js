@@ -1,6 +1,9 @@
 // Declarando variáveis
 var btnContact = document.querySelector('.jl-btn-contact')
 var toggleModal = document.querySelectorAll('.jl-toggle-modal')
+var toggleMenu = document.querySelectorAll('.jl-toggle-menu')
+var menuMobile = document.querySelector('.jl-menu-mob')
+var btnMenuMobIcon = document.querySelector('.jl-btn-menu-mob ion-icon')
 
 // Page Preloader
 window.addEventListener('load', function () {
@@ -19,8 +22,24 @@ btnContact.addEventListener('click', function () {
     this.classList.toggle('jl-change-icon')
 })
 
-// Abrindo/fechando modal de orçamento
-for (var i = 0; i < toggleModal.length; i++) {
+// Abrir/fechar menu mobile (drawer menu)
+for (let i = 0; i < toggleMenu.length; i++) {
+    toggleMenu[i].addEventListener('click', function () {
+        var overlay = document.querySelector('.jl-menu-overlay')
+        overlay.classList.toggle('jl-is-open')
+
+        menuMobile.classList.toggle('jl-menu-is-closed')
+        menuMobile.classList.toggle('jl-menu-is-open')
+
+        var icon = btnMenuMobIcon.getAttribute('name')
+        
+        if (icon === 'menu') btnMenuMobIcon.setAttribute('name', 'close')
+        else btnMenuMobIcon.setAttribute('name', 'menu')
+    })
+}
+
+// Abrir/fechar modal de orçamento
+for (let i = 0; i < toggleModal.length; i++) {
     toggleModal[i].addEventListener('click', function () {
         var overlay = document.querySelector('.jl-overlay')
         var modalOrcamento = document.querySelector('#jl-modal-orcamento')
