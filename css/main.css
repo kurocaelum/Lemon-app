@@ -409,6 +409,11 @@ label {
         text-align: center;
     }
 
+    .jl-home-presentation .jl-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .jl-scroll-down {
         width: 70px;
         height: 105px;
@@ -877,7 +882,16 @@ label {
 @media screen and (min-width: 576px) {
 }
 
+@media screen and (min-width: 700px) {
+    .jl-home-presentation {
+        background-size: 100%;
+    }
+}
+
 @media screen and (min-width: 768px) {
+    .jl-home-presentation {
+        background-size: 80%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -945,6 +959,11 @@ label {
 
     .jl-home-presentation p {
         text-align: left;
+    }
+
+    .jl-home-presentation .jl-btn {
+        margin-left: 0;
+        margin-right: auto;
     }
 }
 
