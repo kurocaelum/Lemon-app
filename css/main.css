@@ -972,6 +972,7 @@ label {
 
     .jl-slider-list .jl-portfolio-item-thumb {
         padding: 30px 0 19px 0;
+        margin-top: 45px;
     }
 
     .jl-slider-list .jl-portfolio-item-thumb img {
@@ -1001,6 +1002,7 @@ label {
     /* TODO */
     .jl-slider-list .jl-portfolio-item-thumb {
         padding: 75px 0 19px 0;
+        margin-top: 0;
     }
 
     .jl-slider-list .jl-portfolio-item-thumb img {
