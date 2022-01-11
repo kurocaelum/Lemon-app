@@ -876,6 +876,10 @@ label {
     .jl-title-xlarge {
         font-size: 90px;
     }
+    
+    .jl-title-large {
+        font-size: 48px;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
@@ -965,9 +969,57 @@ label {
         margin-left: 0;
         margin-right: auto;
     }
+
+    .jl-slider-list .jl-portfolio-item-thumb {
+        padding: 30px 0 19px 0;
+    }
+
+    .jl-slider-list .jl-portfolio-item-thumb img {
+        width: 120%;
+        max-width: 120%;
+        left: -105px;
+    }
+
+    .jl-slider-list .jl-portfolio-item-thumb > button {
+        margin-right: 30px;
+    }
+
+    .jl-navigator-counter span {
+        font-size: 100px;
+    }
+
+    .jl-navigator-counter::before {
+        width: 30px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .jl-title-large {
+        font-size: 64px;
+    }
+
+    /* TODO */
+    .jl-slider-list .jl-portfolio-item-thumb {
+        padding: 75px 0 19px 0;
+    }
+
+    .jl-slider-list .jl-portfolio-item-thumb img {
+        width: 100%;
+        max-width: 100%;
+        left: -75px;
+    }
+
+    .jl-slider-list .jl-portfolio-item-thumb > button {
+        margin-right: 75px;
+    }
+
+    .jl-navigator-counter span {
+        font-size: 120px;
+    }
+
+    .jl-navigator-counter::before {
+        width: 35px;
+    }
 }
 
 /* Alguns notebooks começam com resolução 1364/1365/1366 */
@@ -1065,11 +1117,6 @@ label {
 .jl-title-medium {
     font-size: 48px;
 }
-
-.jl-title-large {
-    font-size: 64px;
-}
-
 
 .jl-text-green {
     color: #2ccb69;
