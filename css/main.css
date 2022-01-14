@@ -614,7 +614,12 @@ label {
         position: relative;
     }
 
-    .jl-slider-list .jl-portfolio-item-thumb > button, .jl-portfolio-list .jl-portfolio-item-thumb > button {
+    .jl-slider-list .jl-portfolio-item-thumb > button {
+        margin: 17px auto 0 auto;
+        float: none;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item-thumb > button {
         margin-top: 17px;
         margin-right: 75px;
         float: right;
@@ -643,11 +648,11 @@ label {
     }
 
     .jl-slider-list .jl-portfolio-item-thumb img {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 90%;
         height: auto;
         position: relative;
-        left: -75px;
+        left: 5%;
         transform: scale(0);
     }
 
@@ -994,7 +999,8 @@ label {
     }
 
     .jl-slider-list .jl-portfolio-item-thumb > button {
-        margin-right: 30px;
+        margin: 17px 6.5% 0 0;
+        float: right;
     }
 
     .jl-navigator-counter span {
