@@ -1,7 +1,3 @@
-var postGallery = document.querySelector('.jl-post-gallery')
-var postGalleryHeight = postGallery.clientHeight
-postGallery.style.height = (postGalleryHeight - 270) + 'px'
-
 var overlay = document.querySelector('.jl-overlay')
 var frameImage = document.querySelector('.jl-gallery-frame-image')
 var frameContainer = document.querySelector('.jl-gallery-frame-container')
@@ -16,6 +12,10 @@ var totalCounter = document.querySelector('.jl-total-slide')
 
 var skeletonLoading = document.querySelector('.jl-skeleton-loading')
 
+
+var postGallery = document.querySelector('.jl-post-gallery')
+var postGalleryHeight = postGallery.clientHeight
+postGallery.style.height = (postGalleryHeight - 270) + 'px'
 
 var counterFormatter = function (n) {
     if (n < 10) return '0' + n
