@@ -674,7 +674,6 @@ label {
         max-width: 100%;
         height: auto;
         position: relative;
-        left: -75px;
     }
 
     /*-----PORTFOLIO-----*/
@@ -689,12 +688,14 @@ label {
         margin-top: 71px;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info button, .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info button {
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info button, 
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info button {
         float: none;
         margin: 0 auto;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info p, .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info p {
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info p, 
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info p {
         text-align: center;
     }
 
@@ -713,7 +714,7 @@ label {
     }
 
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb img {
-        left: 75px;
+        display: block;
     }
 
     /*-----SOBRE-----*/
@@ -1064,6 +1065,14 @@ label {
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info h1, 
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info p {
         text-align: left;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb img {
+        left: 75px;
+    }
+    
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb img {
+        left: -75px;
     }
 
     .jl-navigator-counter span {
