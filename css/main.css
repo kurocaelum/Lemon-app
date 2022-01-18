@@ -633,9 +633,8 @@ label {
     }
 
     .jl-portfolio-list .jl-portfolio-item-thumb > button {
-        margin-top: 17px;
-        margin-right: 75px;
-        float: right;
+        margin: 17px auto 0 auto;
+        float: none;
     }
 
     .jl-slider-list .jl-portfolio-item-box {
@@ -706,11 +705,6 @@ label {
 
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) > .row {
         flex-direction: row-reverse;
-    }
-
-    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb button {
-        float: left;
-        margin-left: 75px;
     }
 
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb img {
@@ -1073,6 +1067,16 @@ label {
     
     .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb img {
         left: -75px;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb button {
+        float: left;
+        margin-left: 75px;
+    }
+    
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb button {
+        float: right;
+        margin-right: 75px;
     }
 
     .jl-navigator-counter span {
