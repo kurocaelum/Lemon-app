@@ -1057,6 +1057,10 @@ label {
         margin-left: 105px;
     }
 
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info button {
+        float: left;
+    }
+
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info h1, 
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info p {
         text-align: left;
