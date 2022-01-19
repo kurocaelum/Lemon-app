@@ -1022,9 +1022,9 @@ label {
     }
 
     .jl-slider-list .jl-portfolio-item-thumb img {
-        width: 120%;
-        max-width: 120%;
-        left: -105px;
+        width: calc(100% + 45px);
+        max-width: calc(100% + 45px);
+        left: -75px;
     }
 
     .jl-slider-list .jl-portfolio-item-thumb > button {
