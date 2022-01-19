@@ -1063,8 +1063,17 @@ label {
         text-align: left;
     }
 
+    .jl-portfolio-list .jl-portfolio-item-thumb {
+        padding: 30px 0 19px 0;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item-thumb img {
+        width: calc(100% + 45px);
+        max-width: calc(100% + 45px);
+    }
+
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb img {
-        left: 75px;
+        left: 30px;
     }
     
     .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb img {
@@ -1135,7 +1144,6 @@ label {
         font-size: 64px;
     }
 
-    /* TODO */
     .jl-slider-list .jl-portfolio-item-thumb {
         padding: 75px 0 19px 0;
         margin-top: 0;
@@ -1149,6 +1157,23 @@ label {
 
     .jl-slider-list .jl-portfolio-item-thumb > button {
         margin-right: 75px;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item-thumb {
+        padding: 75px 0 19px 0;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item-thumb img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb img {
+        left: 75px;
+    }
+    
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb img {
+        left: -75px;
     }
 
     .jl-navigator-counter span {
