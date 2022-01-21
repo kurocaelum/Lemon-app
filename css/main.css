@@ -719,7 +719,6 @@ label {
     /*-----DETALHES-----*/
 
     .jl-hero {
-        height: 500px;
         background-image: url('../pages/portfolio/img/hero.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -732,7 +731,8 @@ label {
     }
 
     .jl-hero-inner {
-        height: 500px;
+        display: table;
+        padding: 65px 0;
     }
 
     .jl-hero-inner-content {
@@ -740,7 +740,7 @@ label {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.85);
         display: block;
-        padding: 55px 65px 65px;
+        padding: 15px 25px 15px;
     }
     
     .jl-hero-inner-content p {
@@ -913,6 +913,9 @@ label {
 
 /* Baseados em breakpoints de resolução do Bootstrap */
 @media screen and (min-width: 576px) {
+    .jl-hero-inner-content {
+        padding: 55px 65px 65px;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -1237,7 +1240,7 @@ label {
 .jl-btn-medium {
     height: 38px;
     line-height: 38px;
-    padding: 0 27px;
+    padding: 0 20px;
     border-radius: 19px; /* Metade do height */
     font-size: 14px;
 }
