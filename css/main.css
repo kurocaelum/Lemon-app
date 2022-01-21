@@ -736,31 +736,29 @@ label {
     }
 
     .jl-hero-inner-content {
-        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        display: block;
+        padding: 55px 65px 65px;
     }
     
     .jl-hero-inner-content p {
         margin-bottom: 15px;
     }
 
-    .jl-hero-inner-content::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.85);
-        display: block;
-        position: absolute;
-        left: -65px;
-        top: -65px;
-        box-sizing: content-box;
-        padding: 65px;
-    }
-
     .jl-project-stats {
         width: 100%;
         height: 100%;
         display: table;
-        border-right: 1px solid #2ccb69;
+        border-right: none;
+    }
+
+    .jl-project-description {
+        width: 100%;
+        height: 100%;
+        display: table;
+        margin-top: 30px;
     }
 
     .jl-post {
@@ -1121,6 +1119,14 @@ label {
         width: calc(100% - 75px);
         left: -75px;
         margin-top: 73px;
+    }
+
+    .jl-project-stats {
+        border-right: 1px solid #2ccb69;
+    }
+
+    .jl-project-description {
+        margin-top: 0;
     }
 
     /* UTILITARIAS */
