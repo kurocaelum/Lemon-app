@@ -909,6 +909,10 @@ label {
         height: auto;
         position: relative;
     }
+
+    .jl-text-center-mob {
+        text-align: center;
+    }
 }
 
 /* Baseados em breakpoints de resolução do Bootstrap */
@@ -931,6 +935,10 @@ label {
 
     .jl-title-large {
         font-size: 48px;
+    }
+
+    .jl-text-center-mob {
+        text-align: left;
     }
 }
 
