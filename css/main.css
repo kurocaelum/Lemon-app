@@ -729,6 +729,13 @@ label {
         bottom: 0;
     }
 
+    .jl-titulo-sobre, .jl-info-sobre, .jl-premios-sobre {
+        width: 100%;
+        display: table;
+        float: left;
+        margin-bottom: 30px;
+    }
+
     /*-----DETALHES-----*/
 
     .jl-hero {
@@ -1171,6 +1178,23 @@ label {
         top: 17px;
     }
 
+    .jl-titulo-sobre {
+        width: 100%;
+    }
+    
+    .jl-titulo-sobre h1 {
+        font-size: 90px;
+    }
+
+    .jl-info-sobre {
+        width: 55%;
+    }
+
+    .jl-premios-sobre {
+        width: 45%;
+        padding-left: 30px;
+    }
+
     /* UTILITARIAS */
 
     .jl-full-height {
@@ -1235,6 +1259,10 @@ label {
     .jl-navigator-counter::before {
         width: 35px;
     }
+
+    .jl-titulo-sobre h1 {
+        font-size: 120px;
+    }
 }
 
 /* Alguns notebooks começam com resolução 1364/1365/1366 */
@@ -1245,6 +1273,16 @@ label {
 }
 
 /* Monitores full-hd */
+@media screen and (min-width: 1500px) {
+    .jl-info-sobre {
+        width: 35%;
+    }
+
+    .jl-premios-sobre {
+        width: 31%;
+    }
+}
+
 @media screen and (min-width: 1600px) {
     .jl-gallery-frame-container {
         width: 400px;
