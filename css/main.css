@@ -711,9 +711,22 @@ label {
 
     /*-----SOBRE-----*/
 
-    #jl-avatar-sobre img {
+    .jl-section-sobre {
+        height: calc(100% - 130px);
+    }
+
+    .jl-section-sobre .container-fluid, .jl-section-sobre .container-fluid > .row {
+        height: 100%;
+    }
+    
+    .jl-avatar-sobre {
         position: relative;
+    }
+
+    .jl-box-img {
+        position: absolute;
         left: -15px;
+        bottom: 0;
     }
 
     /*-----DETALHES-----*/
