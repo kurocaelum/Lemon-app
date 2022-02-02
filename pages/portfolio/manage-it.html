@@ -1,262 +1,358 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
-    <title>Manage It - João Lemon Designer</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.min.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/main.css" />
+		<title>Manage It - João Lemon Designer</title>
+	</head>
 
-  <body>
-    <div class="jl-preloader">
-      <div class="jl-preloader-inner">
-        <img src="../../images/lemon-loader.svg" class="jl-mar-bottom-15" alt="Carregando..." />
-        <p class="jl-text-light jl-mar-top-15">Aguarde um pouquinho… Estou preparando a limonada</p>
-      </div>
-    </div>
+	<body>
+		<div class="jl-preloader">
+			<div class="jl-preloader-inner">
+				<img src="../../images/lemon-loader.svg" class="jl-mar-bottom-15" alt="Carregando..." />
+				<p class="jl-text-light jl-mar-top-15">Aguarde um pouquinho… Estou preparando a limonada</p>
+			</div>
+		</div>
 
-    <div class="jl-overlay jl-toggle-gallery"></div>
+		<div class="jl-overlay jl-toggle-gallery"></div>
+		<div class="jl-menu-overlay jl-toggle-menu"></div>
 
-    <div class="jl-gallery-frame-container">
-      <div class="jl-gallery-frame-inner">
-        <button class="jl-toggle-gallery jl-close-gallery">
-          <ion-icon name="close"></ion-icon>
-        </button>
-        <img src="img/frame-smartphone.png" class="jl-gallery-frame" />
+		<div class="jl-gallery-frame-container">
+			<div class="jl-gallery-frame-inner">
+				<button class="jl-toggle-gallery jl-close-gallery">
+					<ion-icon name="close"></ion-icon>
+				</button>
+				<img src="img/frame-smartphone.png" class="jl-gallery-frame" />
 
-        <div class="jl-skeleton-loading">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+				<div class="jl-skeleton-loading">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 
-        <img src="" data-index="" class="jl-gallery-frame-image" />
-      </div>
+				<img src="" data-index="" class="jl-gallery-frame-image" />
+			</div>
 
-      <div class="jl-items-next-prev">
-        <div class="jl-item-prev">
-          <ion-icon name="arrow-dropleft"></ion-icon>
-        </div>
+			<div class="jl-items-next-prev">
+				<div class="jl-item-prev">
+					<ion-icon name="arrow-dropleft"></ion-icon>
+				</div>
 
-        <div class="jl-items-counter">
-          <span class="jl-current-slide">01</span>
-          /
-          <span class="jl-total-slide">05</span>
-        </div>
+				<div class="jl-items-counter">
+					<span class="jl-current-slide">01</span>
+					/
+					<span class="jl-total-slide">05</span>
+				</div>
 
-        <div class="jl-item-next">
-          <ion-icon name="arrow-dropright"></ion-icon>
-        </div>
-      </div>
-    </div>
+				<div class="jl-item-next">
+					<ion-icon name="arrow-dropright"></ion-icon>
+				</div>
+			</div>
+		</div>
 
-    <header class="jl-topbar">
-      <div class="jl-logo">
-        <img src="../../images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
-      </div>
+		<header class="jl-topbar">
+			<div class="jl-logo">
+				<img src="../../images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
+			</div>
 
-      <nav class="jl-menu">
-        <a href="../../index.html">Home</a>
-        <a href="../portfolio.html">Portfólio</a>
-        <a href="../sobre.html">Sobre</a>
-      </nav>
-    </header>
+			<nav class="jl-menu">
+				<a href="../../index.html">Home</a>
+				<a href="../portfolio.html">Portfólio</a>
+				<a href="../sobre.html">Sobre</a>
+			</nav>
+		</header>
 
-    <div class="jl-contact-info jl-bg-black jl-text-light">
-      <div class="jl-contact-info-inner">
-        <h2 class="jl-title jl-text-green">Contato</h2>
-        <p>joaolemon@mail.com</p>
-        <p>+55 (84) 99913-0442</p>
-        <div class="jl-social-links">
-          <a href="#" class="jl-social">
-            <img src="../../images/icon-instagram.svg" alt="Instagram" />
-          </a>
+		<button class="jl-btn-menu-mob jl-toggle-menu">
+			<ion-icon name="menu"></ion-icon>
+		</button>
 
-          <a href="#" class="jl-social">
-            <img src="../../images/icon-twitter.svg" alt="Twitter" />
-          </a>
+		<!-- Fora do header para posicionar absolutamente tendo window como div pai -->
+		<nav class="jl-menu-mob jl-menu-is-closed">
+			<a href="../../index.html">Home</a>
+			<a href="../portfolio.html">Portfólio</a>
+			<a href="../sobre.html">Sobre</a>
+		</nav>
 
-          <a href="#" class="jl-social">
-            <img src="../../images/icon-dribbble.svg" alt="Dribbble" />
-          </a>
-        </div>
-      </div>
+		<div class="jl-contact-info jl-bg-black jl-text-light">
+			<div class="jl-contact-info-inner">
+				<h2 class="jl-title jl-text-green">Contato</h2>
+				<p>joaolemon@mail.com</p>
+				<p>+55 (84) 99913-0442</p>
+				<div class="jl-social-links">
+					<a href="#" class="jl-social">
+						<img src="../../images/icon-instagram.svg" alt="Instagram" />
+					</a>
 
-      <div class="jl-corner"></div>
-    </div>
+					<a href="#" class="jl-social">
+						<img src="../../images/icon-twitter.svg" alt="Twitter" />
+					</a>
 
-    <button class="jl-btn-contact"></button>
+					<a href="#" class="jl-social">
+						<img src="../../images/icon-dribbble.svg" alt="Dribbble" />
+					</a>
+				</div>
+			</div>
 
-    <div class="jl-page-wrapper">
-      <section class="container-fluid jl-hero">
-        <div class="container">
-          <div class="row jl-text-light align-items-center jl-hero-inner">
-            <div class="col-sm-12 p-0 pl-sm-3 pr-sm-3">
-              <div class="jl-hero-inner-content">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h1 class="jl-title jl-title-medium">Manage It! Aplicativo Mobile</h1>
-                  </div>
-                  <div class="col-sm-12 col-lg-3">
-                    <div class="jl-project-stats">
-                      <p><span class="jl-text-green">Projeto: </span>Aplicativo Mobile</p>
-                      <p><span class="jl-text-green">Cliente: </span>Manage It</p>
-                      <p><span class="jl-text-green">Serviços: </span>UX, UI e Prototipagem</p>
-                      <button class="jl-btn jl-btn-medium jl-btn-green jl-mar-top-15">visitar site <ion-icon name="share-alt"></ion-icon></button>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-lg-9">
-                    <div class="jl-project-description">
-                      <p>
-                        O aplicativo <span class="jl-text-green">Manage It</span> tem como objetivo organizar as tarefas do dia a dia com uso de inteligência artificial. Nulla vulputate, ex in tincidunt
-                        consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.
-                      </p>
-    
-                      <p>Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+			<div class="jl-corner"></div>
+		</div>
 
-      <main class="jl-post">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <section class="jl-post-section">
-                <div class="row">
-                  <div class="col-sm-12 col-md-8 offset-md-2 jl-text-center jl-text-light jl-mar-bottom-15" data-aos-offset="300" data-aos="fade-up">
-                    <h2 class="jl-title jl-title-medium jl-text-green jl-mar-bottom-15">O desafio</h2>
-                    <p>
-                      O maior problema a ser resolvido era <span class="jl-text-green">demonstrar ao usuário somente as prioridades</span> de acordo com seu dia-a-dia. Nulla vulputate, ex in tincidunt
-                      consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.
-                    </p>
-                    <p>Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.</p>
-                  </div>
+		<button class="jl-btn-contact"></button>
 
-                  <div class="col-sm-12 jl-mar-bottom-30" data-aos-offset="300" data-aos="fade-up">
-                    <img src="img/processo-1.png" alt="Manage It - processo parte 1" title="Manage it - processo parte 1" class="jl-img-responsive" />
-                  </div>
+		<div class="jl-page-wrapper">
+			<section class="container-fluid jl-hero">
+				<div class="container">
+					<div class="row jl-text-light align-items-center jl-hero-inner">
+						<div class="col-sm-12 p-0 pl-sm-3 pr-sm-3">
+							<div class="jl-hero-inner-content">
+								<div class="row">
+									<div class="col-sm-12">
+										<h1 class="jl-title jl-title-medium">Manage It! Aplicativo Mobile</h1>
+									</div>
+									<div class="col-sm-12 col-lg-3">
+										<div class="jl-project-stats">
+											<p><span class="jl-text-green">Projeto: </span>Aplicativo Mobile</p>
+											<p><span class="jl-text-green">Cliente: </span>Manage It</p>
+											<p><span class="jl-text-green">Serviços: </span>UX, UI e Prototipagem</p>
+											<button class="jl-btn jl-btn-medium jl-btn-green jl-mar-top-15">visitar site <ion-icon name="share-alt"></ion-icon></button>
+										</div>
+									</div>
+									<div class="col-sm-12 col-lg-9">
+										<div class="jl-project-description">
+											<p>
+												O aplicativo <span class="jl-text-green">Manage It</span> tem como objetivo organizar as tarefas do dia a dia com uso de inteligência artificial. Nulla vulputate, ex in
+												tincidunt consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.
+											</p>
 
-                  <div class="col-sm-12 col-md-6 jl-text-light jl-mar-top-30 jl-text-center-mob" data-aos-offset="300" data-aos="fade-right">
-                    <h2 class="jl-title jl-title-medium jl-text-green jl-mar-bottom-15">Gerando Ideias</h2>
-                    <p>
-                      O maior problema a ser resolvido era <span class="jl-text-green">demonstrar ao usuário somente as prioridades</span> de acordo com seu dia-a-dia. Nulla vulputate, ex in tincidunt
-                      consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.
-                    </p>
-                    <p>Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.</p>
-                  </div>
+											<p>Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                  <div class="col-sm-12 col-md-6 jl-mar-top-30" data-aos-offset="300" data-aos="fade-left">
-                    <img src="img/processo-2.png" alt="Manage It - processo parte 2" title="Manage it - processo parte 2" class="jl-img-responsive" />
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
+			<main class="jl-post">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<section class="jl-post-section">
+								<div class="row">
+									<div class="col-sm-12 col-md-8 offset-md-2 jl-text-center jl-text-light jl-mar-bottom-15" data-aos-offset="300" data-aos="fade-up">
+										<h2 class="jl-title jl-title-medium jl-text-green jl-mar-bottom-15">O desafio</h2>
+										<p>
+											O maior problema a ser resolvido era <span class="jl-text-green">demonstrar ao usuário somente as prioridades</span> de acordo com seu dia-a-dia. Nulla vulputate, ex in tincidunt
+											consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.
+										</p>
+										<p>Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.</p>
+									</div>
 
-        <section class="jl-post-section jl-pre-gallery" style="background-color: #3b427a">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-10 offset-sm-1">
-                <img src="img/previa-1.png" alt="Prévia do app" title="Prévia do app" class="jl-img-responsive" />
-              </div>
-            </div>
-          </div>
-        </section>
+									<div class="col-sm-12 jl-mar-bottom-30" data-aos-offset="300" data-aos="fade-up">
+										<img src="img/processo-1.png" alt="Manage It - processo parte 1" title="Manage it - processo parte 1" class="jl-img-responsive" />
+									</div>
 
-        <section class="jl-post-section jl-post-gallery">
-          <div class="container">
-            <div class="row">
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-1-low.gif" data-item="1" data-src="img/app-1.png" alt="Captura de Tela 1 do App Manage It" title="Captura de Tela 1 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-2-low.gif" data-item="2" data-src="img/app-2.png" alt="Captura de Tela 2 do App Manage It" title="Captura de Tela 2 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-3-low.gif" data-item="3" data-src="img/app-3.png" alt="Captura de Tela 3 do App Manage It" title="Captura de Tela 3 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-4-low.gif" data-item="4" data-src="img/app-4.png" alt="Captura de Tela 4 do App Manage It" title="Captura de Tela 4 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-5-low.gif" data-item="5" data-src="img/app-5.png" alt="Captura de Tela 5 do App Manage It" title="Captura de Tela 5 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-6-low.gif" data-item="6" data-src="img/app-6.png" alt="Captura de Tela 6 do App Manage It" title="Captura de Tela 6 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-7-low.gif" data-item="7" data-src="img/app-7.png" alt="Captura de Tela 7 do App Manage It" title="Captura de Tela 7 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-8-low.gif" data-item="8" data-src="img/app-8.png" alt="Captura de Tela 8 do App Manage It" title="Captura de Tela 8 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-9-low.gif" data-item="9" data-src="img/app-9.png" alt="Captura de Tela 9 do App Manage It" title="Captura de Tela 9 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-10-low.gif" data-item="10" data-src="img/app-10.png" alt="Captura de Tela 10 do App Manage It" title="Captura de Tela 10 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-11-low.gif" data-item="11" data-src="img/app-11.png" alt="Captura de Tela 11 do App Manage It" title="Captura de Tela 11 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-              <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
-                <img src="img/app-12-low.gif" data-item="12" data-src="img/app-12.png" alt="Captura de Tela 12 do App Manage It" title="Captura de Tela 12 do App Manage It" class="jl-img-responsive jl-thumb-img" />
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+									<div class="col-sm-12 col-md-6 jl-text-light jl-mar-top-30 jl-text-center-mob" data-aos-offset="300" data-aos="fade-right">
+										<h2 class="jl-title jl-title-medium jl-text-green jl-mar-bottom-15">Gerando Ideias</h2>
+										<p>
+											O maior problema a ser resolvido era <span class="jl-text-green">demonstrar ao usuário somente as prioridades</span> de acordo com seu dia-a-dia. Nulla vulputate, ex in tincidunt
+											consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.
+										</p>
+										<p>Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.</p>
+									</div>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"
-      integrity="sha512-y8udBZqGjgyE0LefZCa/r4K7VKRsSpOms6r0Iw3/DxjosTFYpXSp7XPNq2AJI3qtmJ/BNPer+Fz94zSBNP7+BQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
-      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"
-      integrity="sha512-g6IhMPPqSSUgE+lYgBpdsXICK0fNhDlDDEuIbphNIKfPTYFD/1VcnxA+7pS9mibvzIb5SB0nNvii5M+yMwkcJA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="../../js/gallery.js"></script>
-    <script src="../../js/main.js"></script>
+									<div class="col-sm-12 col-md-6 jl-mar-top-30" data-aos-offset="300" data-aos="fade-left">
+										<img src="img/processo-2.png" alt="Manage It - processo parte 2" title="Manage it - processo parte 2" class="jl-img-responsive" />
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
 
-    <script>
-      AOS.init()
-      var rellax = new Rellax('.rellax')
+				<section class="jl-post-section jl-pre-gallery" style="background-color: #3b427a">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-10 offset-sm-1">
+								<img src="img/previa-1.png" alt="Prévia do app" title="Prévia do app" class="jl-img-responsive" />
+							</div>
+						</div>
+					</div>
+				</section>
 
-      var galleryItems = document.querySelectorAll('.jl-post-gallery img')
-      for (var i = 0; i < galleryItems.length; i++) {
-        new Waypoint.Inview({
-          element: galleryItems[i],
-          entered: function () {
-            var fullImage = this.element.getAttribute('data-src')
-            this.element.setAttribute('src', fullImage)
-          },
-        })
-      }
-    </script>
-  </body>
+				<section class="jl-post-section jl-post-gallery">
+					<div class="container">
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-1-low.gif"
+									data-item="1"
+									data-src="img/app-1.png"
+									alt="Captura de Tela 1 do App Manage It"
+									title="Captura de Tela 1 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-2-low.gif"
+									data-item="2"
+									data-src="img/app-2.png"
+									alt="Captura de Tela 2 do App Manage It"
+									title="Captura de Tela 2 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-3-low.gif"
+									data-item="3"
+									data-src="img/app-3.png"
+									alt="Captura de Tela 3 do App Manage It"
+									title="Captura de Tela 3 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-4-low.gif"
+									data-item="4"
+									data-src="img/app-4.png"
+									alt="Captura de Tela 4 do App Manage It"
+									title="Captura de Tela 4 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-5-low.gif"
+									data-item="5"
+									data-src="img/app-5.png"
+									alt="Captura de Tela 5 do App Manage It"
+									title="Captura de Tela 5 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-6-low.gif"
+									data-item="6"
+									data-src="img/app-6.png"
+									alt="Captura de Tela 6 do App Manage It"
+									title="Captura de Tela 6 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-7-low.gif"
+									data-item="7"
+									data-src="img/app-7.png"
+									alt="Captura de Tela 7 do App Manage It"
+									title="Captura de Tela 7 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-8-low.gif"
+									data-item="8"
+									data-src="img/app-8.png"
+									alt="Captura de Tela 8 do App Manage It"
+									title="Captura de Tela 8 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-9-low.gif"
+									data-item="9"
+									data-src="img/app-9.png"
+									alt="Captura de Tela 9 do App Manage It"
+									title="Captura de Tela 9 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-10-low.gif"
+									data-item="10"
+									data-src="img/app-10.png"
+									alt="Captura de Tela 10 do App Manage It"
+									title="Captura de Tela 10 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-11-low.gif"
+									data-item="11"
+									data-src="img/app-11.png"
+									alt="Captura de Tela 11 do App Manage It"
+									title="Captura de Tela 11 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
+								<img
+									src="img/app-12-low.gif"
+									data-item="12"
+									data-src="img/app-12.png"
+									alt="Captura de Tela 12 do App Manage It"
+									title="Captura de Tela 12 do App Manage It"
+									class="jl-img-responsive jl-thumb-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"
+			integrity="sha512-y8udBZqGjgyE0LefZCa/r4K7VKRsSpOms6r0Iw3/DxjosTFYpXSp7XPNq2AJI3qtmJ/BNPer+Fz94zSBNP7+BQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+			integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"
+			integrity="sha512-g6IhMPPqSSUgE+lYgBpdsXICK0fNhDlDDEuIbphNIKfPTYFD/1VcnxA+7pS9mibvzIb5SB0nNvii5M+yMwkcJA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="../../js/gallery.js"></script>
+		<script src="../../js/main.js"></script>
+
+		<script>
+			AOS.init()
+			var rellax = new Rellax('.rellax')
+
+			var galleryItems = document.querySelectorAll('.jl-post-gallery img')
+			for (var i = 0; i < galleryItems.length; i++) {
+				new Waypoint.Inview({
+					element: galleryItems[i],
+					entered: function () {
+						var fullImage = this.element.getAttribute('data-src')
+						this.element.setAttribute('src', fullImage)
+					},
+				})
+			}
+		</script>
+	</body>
 </html>
