@@ -1,313 +1,327 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <title>João Lemon - UX/UI Designer</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+		<title>João Lemon - UX/UI Designer</title>
+	</head>
 
-  <body>
-    <div class="jl-preloader">
-      <div class="jl-preloader-inner">
-        <img src="images/lemon-loader.svg" class="jl-mar-bottom-15" alt="Carregando..." />
-        <p class="jl-text-light jl-mar-top-15">Aguarde um pouquinho… Estou preparando a limonada</p>
-      </div>
-    </div>
+	<body>
+		<div class="jl-preloader">
+			<div class="jl-preloader-inner">
+				<img src="images/lemon-loader.svg" class="jl-mar-bottom-15" alt="Carregando..." />
+				<p class="jl-text-light jl-mar-top-15">Aguarde um pouquinho… Estou preparando a limonada</p>
+			</div>
+		</div>
 
-    <div class="jl-overlay jl-toggle-modal"></div>
-    <div class="jl-menu-overlay jl-toggle-menu"></div>
+		<div class="jl-overlay jl-toggle-modal"></div>
+		<div class="jl-menu-overlay jl-toggle-menu"></div>
 
-    <div class="jl-modal jl-bg-black" id="jl-modal-orcamento">
-      <div class="jl-modal-header">
-        <h1 class="jl-title jl-text-green jl-mar-bottom-15">Solicite um orçamento</h1>
-        <button class="jl-close-modal jl-toggle-modal">X</button>
-      </div>
+		<div class="jl-modal jl-bg-black" id="jl-modal-orcamento">
+			<div class="jl-modal-header">
+				<h1 class="jl-title jl-text-green jl-mar-bottom-15">Solicite um orçamento</h1>
+				<button class="jl-close-modal jl-toggle-modal">X</button>
+			</div>
 
-      <div class="jl-modal-body">
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="jl-text-light">Por favor informe os dados abaixo e eu entrarei em contato com você o mais breve possível.</p>
-          </div>
-        </div>
+			<div class="jl-modal-body">
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="jl-text-light">Por favor informe os dados abaixo e eu entrarei em contato com você o mais breve possível.</p>
+					</div>
+				</div>
 
-        <div class="row jl-mar-top-15">
-          <div class="col-sm-12">
-            <form class="jl-form">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <label for="Nome" class="jl-text-light">Nome</label>
-                  <input type="text" name="Nome" id="jl-nome" class="jl-field" />
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <label for="Email" class="jl-text-light">Email</label>
-                  <input type="email" name="Email" id="jl-email" class="jl-field" />
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <label for="Telefone" class="jl-text-light">Telefone</label>
-                  <input type="tel" name="Telefone" id="jl-telefone" class="jl-field" />
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <label for="Site" class="jl-text-light">Site</label>
-                  <input type="text" name="Site" id="jl-site" class="jl-field" />
-                </div>
-                <div class="col-sm-12 col-md-12 jl-mar-top-15 jl-mar-bottom-15">
-                  <label for="Mensagem" class="jl-text-light">Descreva abaixo o projeto na qual você precisa de orçamento:</label>
-                  <textarea name="Mensagem" id="jl-mensagem" class="jl-textarea" rows="8"></textarea>
-                </div>
-              </div>
+				<div class="row jl-mar-top-15">
+					<div class="col-sm-12">
+						<form class="jl-form">
+							<div class="row">
+								<div class="col-sm-12 col-md-6">
+									<label for="Nome" class="jl-text-light">Nome</label>
+									<input type="text" name="Nome" id="jl-nome" class="jl-field" />
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<label for="Email" class="jl-text-light">Email</label>
+									<input type="email" name="Email" id="jl-email" class="jl-field" />
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<label for="Telefone" class="jl-text-light">Telefone</label>
+									<input type="tel" name="Telefone" id="jl-telefone" class="jl-field" />
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<label for="Site" class="jl-text-light">Site</label>
+									<input type="text" name="Site" id="jl-site" class="jl-field" />
+								</div>
+								<div class="col-sm-12 col-md-12 jl-mar-top-15 jl-mar-bottom-15">
+									<label for="Mensagem" class="jl-text-light">Descreva abaixo o projeto na qual você precisa de orçamento:</label>
+									<textarea name="Mensagem" id="jl-mensagem" class="jl-textarea" rows="8"></textarea>
+								</div>
+							</div>
 
-              <div class="row justify-content-end jl-mar-top-15">
-                <div class="col-sm-12 col-md-6">
-                  <button class="jl-btn jl-btn-large jl-btn-green jl-btn-block">Enviar</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+							<div class="row justify-content-end jl-mar-top-15">
+								<div class="col-sm-12 col-md-6">
+									<button class="jl-btn jl-btn-large jl-btn-green jl-btn-block">Enviar</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <header class="jl-topbar">
-      <div class="jl-logo">
-        <img src="images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
-      </div>
+		<header class="jl-topbar">
+			<div class="jl-logo">
+				<img src="images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
+			</div>
 
-      <nav class="jl-menu">
-        <a href="#">Home</a>
-        <a href="pages/portfolio.html">Portfólio</a>
-        <a href="pages/sobre.html">Sobre</a>
-      </nav>
-    </header>
+			<nav class="jl-menu">
+				<a href="#">Home</a>
+				<a href="pages/portfolio.html">Portfólio</a>
+				<a href="pages/sobre.html">Sobre</a>
+			</nav>
+		</header>
 
-    <button class="jl-btn-menu-mob jl-toggle-menu">
-      <ion-icon name="menu"></ion-icon>
-    </button>
+		<button class="jl-btn-menu-mob jl-toggle-menu">
+			<ion-icon name="menu"></ion-icon>
+		</button>
 
-    <!-- Fora do header para posicionar absolutamente tendo window como div pai -->
-    <nav class="jl-menu-mob jl-menu-is-closed">
-      <a href="#">Home</a>
-      <a href="pages/portfolio.html">Portfólio</a>
-      <a href="pages/sobre.html">Sobre</a>
-    </nav>
+		<!-- Fora do header para posicionar absolutamente tendo window como div pai -->
+		<nav class="jl-menu-mob jl-menu-is-closed">
+			<a href="#">Home</a>
+			<a href="pages/portfolio.html">Portfólio</a>
+			<a href="pages/sobre.html">Sobre</a>
+		</nav>
 
-    <div class="jl-contact-info jl-bg-black jl-text-light">
-      <div class="jl-contact-info-inner">
-        <h2 class="jl-title jl-text-green">Contato</h2>
-        <p>joaolemon@mail.com</p>
-        <p>+55 (84) 99913-0442</p>
-        <div class="jl-social-links">
-          <a href="#" class="jl-social">
-            <img src="images/icon-instagram.svg" alt="Instagram" />
-          </a>
+		<div class="jl-contact-info jl-bg-black jl-text-light">
+			<div class="jl-contact-info-inner">
+				<h2 class="jl-title jl-text-green">Contato</h2>
+				<p>joaolemon@mail.com</p>
+				<p>+55 (84) 99913-0442</p>
+				<div class="jl-social-links">
+					<a href="#" class="jl-social">
+						<img src="images/icon-instagram.svg" alt="Instagram" />
+					</a>
 
-          <a href="#" class="jl-social">
-            <img src="images/icon-twitter.svg" alt="Twitter" />
-          </a>
+					<a href="#" class="jl-social">
+						<img src="images/icon-twitter.svg" alt="Twitter" />
+					</a>
 
-          <a href="#" class="jl-social">
-            <img src="images/icon-dribbble.svg" alt="Dribbble" />
-          </a>
-        </div>
-      </div>
+					<a href="#" class="jl-social">
+						<img src="images/icon-dribbble.svg" alt="Dribbble" />
+					</a>
+				</div>
+			</div>
 
-      <div class="jl-corner"></div>
-    </div>
+			<div class="jl-corner"></div>
+		</div>
 
-    <button class="jl-btn-contact"></button>
+		<button class="jl-btn-contact"></button>
 
-    <div class="jl-page-wrapper">
-      <section class="jl-full-height jl-first-section jl-home-presentation">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 jl-display-text">
-              <h1 class="jl-title jl-title-xlarge jl-text-green">Olá!</h1>
-              <p class="jl-text-light">
-                Meu nome é <span class="jl-text-green">João Lemon</span>, sou designer de <span class="jl-text-green">UX e UI</span>. Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.
-              </p>
-              <button href="#" class="jl-btn jl-btn-large jl-btn-green jl-mar-top-15 jl-toggle-modal">solicite um orçamento</button>
-            </div>
-          </div>
+		<div class="jl-page-wrapper">
+			<section class="jl-full-height jl-first-section jl-home-presentation">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 jl-display-text">
+							<h1 class="jl-title jl-title-xlarge jl-text-green">Olá!</h1>
+							<p class="jl-text-light">
+								Meu nome é <span class="jl-text-green">João Lemon</span>, sou designer de <span class="jl-text-green">UX e UI</span>. Nulla vulputate, ex in tincidunt consequat, dui metus luctus
+								purus, ut dapibus quam augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra.
+							</p>
+							<button href="#" class="jl-btn jl-btn-large jl-btn-green jl-mar-top-15 jl-toggle-modal">solicite um orçamento</button>
+						</div>
+					</div>
 
-          <div class="jl-scroll-down">
-            <div class="jl-arrow-down">
-              <img src="images/arrow-down.svg" alt="Role para baixo" />
-            </div>
-          </div>
-        </div>
-      </section>
+					<div class="jl-scroll-down">
+						<div class="jl-arrow-down">
+							<img src="images/arrow-down.svg" alt="Role para baixo" />
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section class="jl-full-height" id="jl-home-portfolio">
-        <div class="container-fluid jl-no-padding">
-          <div class="row">
-            <div class="col-sm-12 d-block d-lg-none jl-mar-top-30 jl-pad-top-30">
-              <h2 class="jl-title jl-title-large jl-text-green jl-text-center">Projetos Selecionados</h2>
-            </div>
-          </div>
+			<section class="jl-full-height" id="jl-home-portfolio">
+				<div class="container-fluid jl-no-padding">
+					<div class="row">
+						<div class="col-sm-12 d-block d-lg-none jl-mar-top-30 jl-pad-top-30">
+							<h2 class="jl-title jl-title-large jl-text-green jl-text-center">Projetos Selecionados</h2>
+						</div>
+					</div>
 
-          <div class="row">
-            <div class="col-sm-12 col-lg-2 order-2 order-sm-2 order-lg-1">
-              <div class="jl-portfolio-navigator">
-                <div class="jl-navigator-counter d-none d-lg-block">
-                  <span class="jl-text-green">01</span>
-                </div>
+					<div class="row">
+						<div class="col-sm-12 col-lg-2 order-2 order-sm-2 order-lg-1">
+							<div class="jl-portfolio-navigator">
+								<div class="jl-navigator-counter d-none d-lg-block">
+									<span class="jl-text-green">01</span>
+								</div>
 
-                <nav class="jl-item-navigator d-none d-lg-block">
-                  <a href="#" class="jl-item-active" data-nav="1"></a>
-                  <a href="#" data-nav="2"></a>
-                  <a href="#" data-nav="3"></a>
-                  <a href="#" data-nav="4"></a>
-                  <a href="#" data-nav="5"></a>
-                </nav>
+								<nav class="jl-item-navigator d-none d-lg-block">
+									<a href="#" class="jl-item-active" data-nav="1"></a>
+									<a href="#" data-nav="2"></a>
+									<a href="#" data-nav="3"></a>
+									<a href="#" data-nav="4"></a>
+									<a href="#" data-nav="5"></a>
+								</nav>
 
-                <div class="jl-items-next-prev jl-no-radius-left">
-                  <div class="jl-item-prev">
-                    <ion-icon name="arrow-dropleft"></ion-icon>
-                  </div>
+								<div class="jl-items-next-prev jl-no-radius-left">
+									<div class="jl-item-prev">
+										<ion-icon name="arrow-dropleft"></ion-icon>
+									</div>
 
-                  <div class="jl-items-counter">
-                    <span class="jl-current-slide">01</span>
-                    /
-                    <span class="jl-total-slide">05</span>
-                  </div>
+									<div class="jl-items-counter">
+										<span class="jl-current-slide">01</span>
+										/
+										<span class="jl-total-slide">05</span>
+									</div>
 
-                  <div class="jl-item-next">
-                    <ion-icon name="arrow-dropright"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
+									<div class="jl-item-next">
+										<ion-icon name="arrow-dropright"></ion-icon>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <div class="col-sm-12 col-lg-10 order-1 order-sm-1 order-lg-2">
-              <div class="jl-slider-container jl-full-height">
-                <ul class="jl-slider-list jl-full-height">
-                  <li class="jl-portfolio-item jl-slide-active" data-slide="1">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
-                        <div class="jl-portfolio-item-info jl-text-light jl-fade-from-left">
-                          <h1 class="jl-title jl-title-large jl-mar-bottom-15">Startup Rocketz Website</h1>
-                          <p class="jl-mar-bottom-30">UX, UI e WordPress para aceleradora de startups.</p>
-                          <button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
-                        </div>
-                      </div>
+						<div class="col-sm-12 col-lg-10 order-1 order-sm-1 order-lg-2">
+							<div class="jl-slider-container jl-full-height">
+								<ul class="jl-slider-list jl-full-height">
+									<li class="jl-portfolio-item jl-slide-active" data-slide="1">
+										<div class="row">
+											<div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+												<div class="jl-portfolio-item-info jl-text-light jl-fade-from-left">
+													<h1 class="jl-title jl-title-large jl-mar-bottom-15">Startup Rocketz Website</h1>
+													<p class="jl-mar-bottom-30">UX, UI e WordPress para aceleradora de startups.</p>
+													<button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
+												</div>
+											</div>
 
-                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
-                        <div class="jl-portfolio-item-thumb">
-                          <div class="jl-portfolio-item-box d-none d-lg-block jl-scale-right"></div>
-                          <img src="images/thumb-1.jpg" alt="Startup Rocketz" title="Startup Rocketz" class="jl-scale-up" />
-                          <button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+											<div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+												<div class="jl-portfolio-item-thumb">
+													<div class="jl-portfolio-item-box d-none d-lg-block jl-scale-right"></div>
+													<img src="images/thumb-1.jpg" alt="Startup Rocketz" title="Startup Rocketz" class="jl-scale-up" />
+													<button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
+												</div>
+											</div>
+										</div>
+									</li>
 
-                  <li class="jl-portfolio-item" data-slide="2">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
-                        <div class="jl-portfolio-item-info jl-text-light">
-                          <h1 class="jl-title jl-title-large jl-mar-bottom-15">Manage It! Aplicativo Mobile</h1>
-                          <p class="jl-mar-bottom-30">UX, UI e Protipação para aplicativo mobile.</p>
-                          <button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
-                        </div>
-                      </div>
+									<li class="jl-portfolio-item" data-slide="2">
+										<div class="row">
+											<div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+												<div class="jl-portfolio-item-info jl-text-light">
+													<h1 class="jl-title jl-title-large jl-mar-bottom-15">Manage It! Aplicativo Mobile</h1>
+													<p class="jl-mar-bottom-30">UX, UI e Protipação para aplicativo mobile.</p>
+													<button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
+												</div>
+											</div>
 
-                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
-                        <div class="jl-portfolio-item-thumb">
-                          <div class="jl-portfolio-item-box d-none d-lg-block"></div>
-                          <img src="images/thumb-2.jpg" alt="Manage It" title="Manage It" />
-                          <button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+											<div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+												<div class="jl-portfolio-item-thumb">
+													<div class="jl-portfolio-item-box d-none d-lg-block"></div>
+													<img src="images/thumb-2.jpg" alt="Manage It" title="Manage It" />
+													<button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
+												</div>
+											</div>
+										</div>
+									</li>
 
-                  <li class="jl-portfolio-item" data-slide="3">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
-                        <div class="jl-portfolio-item-info jl-text-light">
-                          <h1 class="jl-title jl-title-large jl-mar-bottom-15">Conteúdo é Rei! Website para agência.</h1>
-                          <p class="jl-mar-bottom-30">Website para agência de conteúdo digital.</p>
-                          <button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
-                        </div>
-                      </div>
+									<li class="jl-portfolio-item" data-slide="3">
+										<div class="row">
+											<div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+												<div class="jl-portfolio-item-info jl-text-light">
+													<h1 class="jl-title jl-title-large jl-mar-bottom-15">Conteúdo é Rei! Website para agência.</h1>
+													<p class="jl-mar-bottom-30">Website para agência de conteúdo digital.</p>
+													<button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
+												</div>
+											</div>
 
-                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
-                        <div class="jl-portfolio-item-thumb">
-                          <div class="jl-portfolio-item-box d-none d-lg-block"></div>
-                          <img src="images/thumb-3.jpg" alt="Conteúdo é Rei" title="Conteúdo é Rei" />
-                          <button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+											<div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+												<div class="jl-portfolio-item-thumb">
+													<div class="jl-portfolio-item-box d-none d-lg-block"></div>
+													<img src="images/thumb-3.jpg" alt="Conteúdo é Rei" title="Conteúdo é Rei" />
+													<button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
+												</div>
+											</div>
+										</div>
+									</li>
 
-                  <li class="jl-portfolio-item" data-slide="4">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
-                        <div class="jl-portfolio-item-info jl-text-light">
-                          <h1 class="jl-title jl-title-large jl-mar-bottom-15">Vinyassa! Aplicativo Mobile</h1>
-                          <p class="jl-mar-bottom-30">UX, UI e Protipação para aplicativo mobile.</p>
-                          <button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
-                        </div>
-                      </div>
+									<li class="jl-portfolio-item" data-slide="4">
+										<div class="row">
+											<div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+												<div class="jl-portfolio-item-info jl-text-light">
+													<h1 class="jl-title jl-title-large jl-mar-bottom-15">Vinyassa! Aplicativo Mobile</h1>
+													<p class="jl-mar-bottom-30">UX, UI e Protipação para aplicativo mobile.</p>
+													<button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
+												</div>
+											</div>
 
-                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
-                        <div class="jl-portfolio-item-thumb">
-                          <div class="jl-portfolio-item-box d-none d-lg-block"></div>
-                          <img src="images/thumb-4.jpg" alt="Vinyassa" title="Vinyassa" />
-                          <button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+											<div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+												<div class="jl-portfolio-item-thumb">
+													<div class="jl-portfolio-item-box d-none d-lg-block"></div>
+													<img src="images/thumb-4.jpg" alt="Vinyassa" title="Vinyassa" />
+													<button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
+												</div>
+											</div>
+										</div>
+									</li>
 
-                  <li class="jl-portfolio-item" data-slide="5">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
-                        <div class="jl-portfolio-item-info jl-text-light">
-                          <h1 class="jl-title jl-title-large jl-mar-bottom-15">Controle Total. Web App</h1>
-                          <p class="jl-mar-bottom-30">UX, UI e Protipação para aplicativo web.</p>
-                          <button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
-                        </div>
-                      </div>
+									<li class="jl-portfolio-item" data-slide="5">
+										<div class="row">
+											<div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+												<div class="jl-portfolio-item-info jl-text-light">
+													<h1 class="jl-title jl-title-large jl-mar-bottom-15">Controle Total. Web App</h1>
+													<p class="jl-mar-bottom-30">UX, UI e Protipação para aplicativo web.</p>
+													<button class="jl-btn jl-btn-large jl-btn-green">ver projeto</button>
+												</div>
+											</div>
 
-                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
-                        <div class="jl-portfolio-item-thumb">
-                          <div class="jl-portfolio-item-box d-none d-lg-block"></div>
-                          <img src="images/thumb-5.jpg" alt="Controle Total" title="Controle Total" />
-                          <button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+											<div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+												<div class="jl-portfolio-item-thumb">
+													<div class="jl-portfolio-item-box d-none d-lg-block"></div>
+													<img src="images/thumb-5.jpg" alt="Controle Total" title="Controle Total" />
+													<button class="jl-btn jl-btn-medium jl-btn-dark">visitar site <ion-icon name="share-alt"></ion-icon></button>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
-      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"
-      integrity="sha512-g6IhMPPqSSUgE+lYgBpdsXICK0fNhDlDDEuIbphNIKfPTYFD/1VcnxA+7pS9mibvzIb5SB0nNvii5M+yMwkcJA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="js/anime.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+			integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"
+			integrity="sha512-g6IhMPPqSSUgE+lYgBpdsXICK0fNhDlDDEuIbphNIKfPTYFD/1VcnxA+7pS9mibvzIb5SB0nNvii5M+yMwkcJA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			// Animando elementos on scroll (com Waypoints)
+			var myScrollDown = document.querySelector('.jl-scroll-down')
+			var waypoint = new Waypoint({
+				element: myScrollDown,
+				handler: function () {
+					myScrollDown.classList.toggle('jl-fade-out')
+				},
+				offset: '80%',
+			})
+		</script>
+	</body>
 </html>
