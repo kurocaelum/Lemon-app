@@ -49,3 +49,18 @@ for (let i = 0; i < toggleModal.length; i++) {
         modalOrcamento.classList.toggle('jl-slide-top-in')
     })
 }
+
+
+// Animando elementos da Topbar
+var triggerTopbar = document.querySelector('.jl-trigger-topbar')
+var topbar = document.querySelector('.jl-topbar')
+var logo = document.querySelector('.jl-logo')
+
+var waypoint = new Waypoint({
+    element: triggerTopbar,
+    handler: function () {
+        topbar.classList.toggle('jl-topbar-bg')
+        logo.classList.toggle('jl-logo-shorten')
+    },
+    offset: '50px',
+})
