@@ -145,6 +145,62 @@ label {
     background: transparent;
 }
 
+.border-top-left, .border-bottom-right {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: fixed;
+    z-index: 800;
+}
+
+.border-top-left {
+    top: 0;
+    left: 0;
+}
+
+.border-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.border-top-left::before, .border-top-left::after {
+    content: '';
+    display: block;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.border-top-left::before {
+    width: 30px;
+    height: 100vh;
+}
+
+.border-top-left::after {
+    width: 100vw;
+    height: 30px;
+}
+
+.border-bottom-right::before, .border-bottom-right::after {
+    content: '';
+    display: block;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.border-bottom-right::before {
+    width: 30px;
+    height: 100vh;
+}
+
+.border-bottom-right::after {
+    width: 100vw;
+    height: 30px;
+}
+
 /* Menores resoluções presentes em smartphones mais antigos */
 @media screen and (min-width: 320px) {
     .jl-page-wrapper,
