@@ -61,6 +61,7 @@ var waypoint = new Waypoint({
     handler: function () {
         topbar.classList.toggle('jl-topbar-bg')
         logo.classList.toggle('jl-logo-shorten')
+        logo.classList.toggle('jl-logo-big')
     },
     offset: '50px',
 })
