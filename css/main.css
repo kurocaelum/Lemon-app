@@ -1056,6 +1056,24 @@ label {
         position: relative;
         top: 13px;
     }
+    
+    /* ------ 404 ------ */
+
+    .jl-404 h1, .jl-404 p {
+        text-align: center;
+    }
+
+    .jl-404 .jl-btn {
+        margin: 15px auto;
+    }
+
+    .jl-404 img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 
     /* UTILITARIAS */
     
@@ -1102,6 +1120,13 @@ label {
 @media screen and (min-width: 576px) {
     .jl-hero-inner-content {
         padding: 55px 65px 65px;
+    }
+
+    /* ------ 404 ------ */
+
+    .jl-404 img {
+        width: 80%;
+        max-width: 80%;
     }
 }
 
@@ -1361,6 +1386,25 @@ label {
         display: table;
     }
 
+    /* ------ 404 ------ */
+
+    .jl-404 h1, .jl-404 p {
+        text-align: left;
+    }
+
+    .jl-404 p {
+        margin-top: 40px;
+    }
+
+    .jl-404 .jl-btn {
+        margin-left: 0;
+    }
+
+    .jl-404 img {
+        width: 100%;
+        max-width: 100%;
+    }
+
     /* UTILITARIAS */
 
     .jl-full-height {
@@ -1473,6 +1517,7 @@ label {
     transition: all 0.2s ease-out;
     /* text-transform: lowercase; */
     position: relative;
+    text-decoration: none;
 }
 
 .jl-btn ion-icon {
