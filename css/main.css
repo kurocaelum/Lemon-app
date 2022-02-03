@@ -926,6 +926,32 @@ label {
         top: -270px;
     }
 
+    .jl-thumb-box {
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .jl-thumb-box::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: 700;
+        background-color: rgba(44, 203, 105, 0.45);
+        background-image: url('../images/icon-see-more.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .jl-thumb-box:hover::before {
+        display: block;
+        cursor: pointer;
+    }
+
     .jl-gallery-frame-container {
         width: 60%;
         display: none;
